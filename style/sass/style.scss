@@ -1,0 +1,43 @@
+//GLOBAL USAGE OF DEFAULT SETTINGS
+
+//IMPORTS
+@import "../../assets/fonts/fontawesome-free-5.7.2-web/scss/fontawesome.scss";
+@import "../../assets/fonts/fontawesome-free-5.7.2-web/scss/solid.scss";
+@import "../../assets/fonts/fontawesome-free-5.7.2-web/scss/regular.scss";
+
+//Import all font families from assets
+@font-face {
+    src: url('{}/assets/fonts/LiberationSans/*');
+}
+
+//Set font familes
+$defaultFont: 'Liberation Sans', sans-serif;
+$iconFont: 'Font Awesome 5';
+
+//Colors
+$defaultBackground: #252627;
+$defaultNav: #181818;
+$defaultFontColor: #FFFFFF;
+$offwhite: #F1E5FF;
+$gold: #DDA454;
+
+//Global styling
+body {
+    background-color: $defaultBackground;
+    font-family: $defaultFont;
+    color: $defaultFontColor;
+}
+
+//Font awesome icons
+i {
+    color: $offwhite;
+    font-family: $iconFont;
+    
+    //Extend our fa import
+    //@extend %fa-icon;
+    
+    //When solid extend bold
+    .fas {
+        @extend .fab;
+    }
+}
