@@ -22,7 +22,7 @@ $iconFont: 'Font Awesome 5';
 $defaultBackground: #252627;
 $defaultNav: #181818;
 $defaultFontColor: #FFFFFF;
-$offwhite: #F1E5FF;
+$offwhite: #E6E6E6;
 $gold: #DDA454;
 
 //Converts px measurements into em
@@ -51,9 +51,12 @@ body {
         overflow-x: hidden;
         text-align: center;
         display: inline-block;
+        position: relative;
+        overflow-y: hidden;
         
         a {
             display: block;
+            margin-top: pxToRem(40);
             
             //When page is active highlight it for user
             &.active {
@@ -61,6 +64,20 @@ body {
                     color: $gold;
                 }
             }
+        }
+        
+        .upperNav {
+            position: absolute;
+            top: pxToRem(175);
+            left: 50%;
+            transform: translate(-50%, 0);
+        }
+        
+        .lowerNav {
+            position: absolute;
+            bottom: pxToRem(45);
+            left: 50%;
+            transform: translate(-50%, 0);
         }
     }
     
@@ -83,6 +100,7 @@ body {
     .container {
         width: 100%;
         
+        //Background image
         .overlay {
             height: 100%;
             background-size: cover;
@@ -90,8 +108,25 @@ body {
             background-position: center center;
         }
         
+        //Primary and secondary fonts
         h1, h2 {
             z-index: 1;
+            letter-spacing: pxToRem(1.2);
+        }
+        
+        //Primary button styling
+        button {
+            height: pxToRem(45);
+            width: pxToRem(175);
+            border: pxToRem(2) solid $gold;
+            border-radius: pxToRem(4);
+            color: $gold;
+            background-color: transparent;
+            text-decoration: none;
+            text-align: center;
+            cursor: pointer;
+            z-index: 1;
+            outline-style:none;
         }
     }
     

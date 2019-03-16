@@ -4283,13 +4283,26 @@ body {
     background-color: #181818;
     overflow-x: hidden;
     text-align: center;
-    display: inline-block; }
+    display: inline-block;
+    position: relative;
+    overflow-y: hidden; }
     body .sidenav a {
-      display: block; }
+      display: block;
+      margin-top: 2.5rem; }
       body .sidenav a.active i {
         color: #DDA454; }
+    body .sidenav .upperNav {
+      position: absolute;
+      top: 10.9375rem;
+      left: 50%;
+      transform: translate(-50%, 0); }
+    body .sidenav .lowerNav {
+      position: absolute;
+      bottom: 2.8125rem;
+      left: 50%;
+      transform: translate(-50%, 0); }
   body i {
-    color: #F1E5FF;
+    color: #E6E6E6;
     font-family: "Font Awesome 5";
     font-size: 24px; }
   body .container {
@@ -4300,7 +4313,20 @@ body {
       background-repeat: no-repeat;
       background-position: center center; }
     body .container h1, body .container h2 {
-      z-index: 1; }
+      z-index: 1;
+      letter-spacing: 0.075rem; }
+    body .container button {
+      height: 2.8125rem;
+      width: 10.9375rem;
+      border: 0.125rem solid #DDA454;
+      border-radius: 0.25rem;
+      color: #DDA454;
+      background-color: transparent;
+      text-decoration: none;
+      text-align: center;
+      cursor: pointer;
+      z-index: 1;
+      outline-style: none; }
   body h1 span {
     display: block; }
 
@@ -4317,9 +4343,13 @@ body, html {
   margin-left: 5rem; }
 #landingPage .container h2 {
   position: absolute;
-  color: #F1E5FF;
+  color: #E6E6E6;
   font-size: 1.6875em;
   margin-top: 29.375rem;
+  margin-left: 5rem; }
+#landingPage .container button {
+  position: absolute;
+  margin-top: 33.4375rem;
   margin-left: 5rem; }
 
 /*# sourceMappingURL=landing.css.map */

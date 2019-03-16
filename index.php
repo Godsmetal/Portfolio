@@ -33,6 +33,7 @@
                 <span class='cursor' data-owner='main'></span>
             </h2>
             
+            <button>CONTACT ME</button>
             
             <div class='overlay'><img></div>
         </div>
