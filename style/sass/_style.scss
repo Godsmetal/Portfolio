@@ -1,0 +1,108 @@
+//GLOBAL USAGE OF DEFAULT SETTINGS / VARIABLES
+
+//IMPORTS
+@import "../../assets/fonts/fontawesome-free-5.7.2-web/scss/fontawesome.scss";
+@import "../../assets/fonts/fontawesome-free-5.7.2-web/scss/solid.scss";
+@import "../../assets/fonts/fontawesome-free-5.7.2-web/scss/regular.scss";
+@import "../../assets/fonts/fontawesome-free-5.7.2-web/scss/brands.scss";
+
+//Import all font families from assets
+@font-face {
+    src: url('{}/assets/fonts/LiberationSans/*');
+}
+
+//Set default px for conversions
+$basePx: 16;
+
+//Set font familes
+$defaultFont: 'Liberation Sans', sans-serif;
+$iconFont: 'Font Awesome 5';
+
+//Colors
+$defaultBackground: #252627;
+$defaultNav: #181818;
+$defaultFontColor: #FFFFFF;
+$offwhite: #F1E5FF;
+$gold: #DDA454;
+
+//Converts px measurements into em
+@function pxToEm($px) {
+    @return ($px/$basePx)+0em;
+}
+
+@function pxToRem($px) {
+    @return ($px/$basePx)+0rem;
+}
+
+//Global styling
+body {
+    background-color: $defaultBackground;
+    font-family: $defaultFont;
+    color: $defaultFontColor;
+    margin: 0;
+    display: flex;
+    font-size: $basePx+px;
+    
+    //Side navigation
+    .sidenav {
+        height: 100%;
+        width: 55px;
+        background-color: $defaultNav;
+        overflow-x: hidden;
+        text-align: center;
+        display: inline-block;
+        
+        a {
+            display: block;
+            
+            //When page is active highlight it for user
+            &.active {
+                i {
+                    color: $gold;
+                }
+            }
+        }
+    }
+    
+    //Font awesome icons
+    i {
+        color: $offwhite;
+        font-family: $iconFont;
+        font-size: 24px;
+
+        //Extend our fa import
+        //@extend %fa-icon;
+
+        //When solid extend bold
+        .fas {
+            @extend .fab;
+        }
+    }
+    
+    //Main container
+    .container {
+        width: 100%;
+        
+        .overlay {
+            height: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+        
+        h1, h2 {
+            z-index: 1;
+        }
+    }
+    
+    //New lines
+    h1 {
+        span {
+            display: block;
+        }
+    }
+}
+
+body,html {
+    height: 100%;
+}

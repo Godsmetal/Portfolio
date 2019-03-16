@@ -1,0 +1,33 @@
+@import "style.scss";
+
+//Styling for landing page
+
+#landingPage {
+    
+    //Main container
+    .container {
+        
+        //Background image
+        .overlay {
+            background-image: url(../../assets/landing-background.jpeg);
+            opacity: 0.25;
+        }
+        
+        //Title font
+        h1 {
+            position: absolute;
+            font-size: pxToEm(52);
+            margin-top: pxToRem(200);
+            margin-left: pxToRem(80);
+        }
+        
+        //Subtitle
+        h2 {
+            position: absolute;
+            color: $offwhite;
+            font-size: pxToEm(27);
+            margin-top: pxToRem(470);
+            margin-left: pxToRem(80);
+        }
+    }
+}

@@ -4,7 +4,7 @@
 .far,
 .fal,
 .fab,
-i .fas {
+body i .fas {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   display: inline-block;
@@ -88,14 +88,14 @@ i .fas {
 .far.fa-pull-left,
 .fal.fa-pull-left,
 .fab.fa-pull-left,
-i .fa-pull-left.fas {
+body i .fa-pull-left.fas {
   margin-right: .3em; }
 .fa.fa-pull-right,
 .fas.fa-pull-right,
 .far.fa-pull-right,
 .fal.fa-pull-right,
 .fab.fa-pull-right,
-i .fa-pull-right.fas {
+body i .fa-pull-right.fas {
   margin-left: .3em; }
 
 .fa-spin {
@@ -4259,14 +4259,67 @@ readers do not read off random characters that represent icons */
   font-weight: 400; }
 
 @font-face {
+  font-family: 'Font Awesome 5 Brands';
+  font-style: normal;
+  font-weight: normal;
+  font-display: auto;
+  src: url("../webfonts/fa-brands-400.eot");
+  src: url("../webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-brands-400.woff2") format("woff2"), url("../webfonts/fa-brands-400.woff") format("woff"), url("../webfonts/fa-brands-400.ttf") format("truetype"), url("../webfonts/fa-brands-400.svg#fontawesome") format("svg"); }
+.fab, body i .fas {
+  font-family: 'Font Awesome 5 Brands'; }
+
+@font-face {
   src: url("{}/assets/fonts/LiberationSans/*"); }
 body {
   background-color: #252627;
   font-family: "Liberation Sans", sans-serif;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  margin: 0;
+  display: flex;
+  font-size: 16px; }
+  body .sidenav {
+    height: 100%;
+    width: 55px;
+    background-color: #181818;
+    overflow-x: hidden;
+    text-align: center;
+    display: inline-block; }
+    body .sidenav a {
+      display: block; }
+      body .sidenav a.active i {
+        color: #DDA454; }
+  body i {
+    color: #F1E5FF;
+    font-family: "Font Awesome 5";
+    font-size: 24px; }
+  body .container {
+    width: 100%; }
+    body .container .overlay {
+      height: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center; }
+    body .container h1, body .container h2 {
+      z-index: 1; }
+  body h1 span {
+    display: block; }
 
-i {
+body, html {
+  height: 100%; }
+
+#landingPage .container .overlay {
+  background-image: url(../../assets/landing-background.jpeg);
+  opacity: 0.25; }
+#landingPage .container h1 {
+  position: absolute;
+  font-size: 3.25em;
+  margin-top: 12.5rem;
+  margin-left: 5rem; }
+#landingPage .container h2 {
+  position: absolute;
   color: #F1E5FF;
-  font-family: "Font Awesome 5"; }
+  font-size: 1.6875em;
+  margin-top: 29.375rem;
+  margin-left: 5rem; }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=landing.css.map */
