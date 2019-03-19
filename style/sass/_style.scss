@@ -23,6 +23,7 @@ $defaultBackground: #252627;
 $defaultNav: #181818;
 $defaultFontColor: #FFFFFF;
 $offwhite: #E6E6E6;
+$white: #FFFFFF;
 $gold: #DDA454;
 
 //Converts px measurements into em
@@ -54,9 +55,11 @@ body {
         position: relative;
         overflow-y: hidden;
         
+        //Links
         a {
             display: block;
             margin-top: pxToRem(40);
+            transition: 0.3s;
             
             //When page is active highlight it for user
             &.active {
@@ -66,6 +69,14 @@ body {
             }
         }
         
+        //Hover effect for link
+        a:hover {
+            i {
+                color: $gold;
+            }
+        }
+        
+        //Upper section of navigation (main page links)
         .upperNav {
             position: absolute;
             top: pxToRem(175);
@@ -73,6 +84,7 @@ body {
             transform: translate(-50%, 0);
         }
         
+        //Lower section of navigation (contact links)
         .lowerNav {
             position: absolute;
             bottom: pxToRem(45);
@@ -126,7 +138,8 @@ body {
             text-align: center;
             cursor: pointer;
             z-index: 1;
-            outline-style:none;
+            outline-style: none;
+            transition: .8s;
         }
     }
     

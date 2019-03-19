@@ -35,5 +35,11 @@
             margin-top: pxToRem(535);
             margin-left: pxToRem(80);
         }
+        
+        button:hover {   
+            box-shadow: inset pxToRem(175) 0 0 0 $gold;
+            color: white;
+        }
+        
     }
 }

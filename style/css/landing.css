@@ -4288,9 +4288,12 @@ body {
     overflow-y: hidden; }
     body .sidenav a {
       display: block;
-      margin-top: 2.5rem; }
+      margin-top: 2.5rem;
+      transition: 0.3s; }
       body .sidenav a.active i {
         color: #DDA454; }
+    body .sidenav a:hover i {
+      color: #DDA454; }
     body .sidenav .upperNav {
       position: absolute;
       top: 10.9375rem;
@@ -4326,7 +4329,8 @@ body {
       text-align: center;
       cursor: pointer;
       z-index: 1;
-      outline-style: none; }
+      outline-style: none;
+      transition: .8s; }
   body h1 span {
     display: block; }
 
@@ -4351,5 +4355,8 @@ body, html {
   position: absolute;
   margin-top: 33.4375rem;
   margin-left: 5rem; }
+#landingPage .container button:hover {
+  box-shadow: inset 10.9375rem 0 0 0 #DDA454;
+  color: white; }
 
 /*# sourceMappingURL=landing.css.map */

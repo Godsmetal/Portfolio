@@ -4,6 +4,8 @@
     <head>
         <title>Mason Santora Portfolio</title>
         <link rel='stylesheet' type='text/css' href='style/css/landing.css'>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/main.js"></script>
     </head>
     
     <body id='landingPage'>
@@ -12,7 +14,7 @@
         <div class='sidenav'>
             <!-- Upper Navigation -->
             <div class='upperNav'>
-                <a href='#'><i class="fas fa-home"></i></a>
+                <a href='index.php'><i class="fas fa-home"></i></a>
                 <a href='#'><i class="fas fa-user-circle"></i></a>
                 <a href='#'><i class="fas fa-project-diagram"></i></a>
             </div>
