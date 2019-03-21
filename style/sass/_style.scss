@@ -127,7 +127,7 @@ body {
         }
         
         //Primary button styling
-        button {
+        button, input[type=submit] {
             height: pxToRem(45);
             width: pxToRem(175);
             border: pxToRem(2) solid $gold;
@@ -140,6 +140,11 @@ body {
             z-index: 1;
             outline-style: none;
             transition: .8s;
+        }
+        
+        button:hover, input[type=submit]:hover {
+            box-shadow: inset pxToRem(175) 0 0 0 $gold;
+            color: white;
         }
     }
     

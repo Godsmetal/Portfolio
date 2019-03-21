@@ -4340,23 +4340,48 @@ body {
 body, html {
   height: 100%; }
 
-#landingPage .container .overlay {
-  background-image: url(../../assets/landing-background.jpeg);
+#contactPage .overlay {
+  background-image: url(../../assets/contact-background.jpeg);
+  background-position: center 10%;
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
   opacity: 0.25; }
-#landingPage .container h1 {
-  position: absolute;
+#contactPage h1 {
   font-size: 3.25em;
-  margin-top: 12.5rem;
-  margin-left: 5rem; }
-#landingPage .container h2 {
+  color: #DDA454;
   position: absolute;
-  color: #E6E6E6;
-  font-size: 1.6875em;
-  margin-top: 29.375rem;
+  margin-top: 7.1875rem;
   margin-left: 5rem; }
-#landingPage .container button {
+#contactPage h2 {
+  font-size: 1.125em;
   position: absolute;
-  margin-top: 33.4375rem;
+  margin-top: 11.875rem;
+  margin-left: 5rem;
+  width: 32.5rem;
+  line-height: 1.625rem;
+  font-weight: normal; }
+#contactPage #contactForm {
+  z-index: 1;
+  position: absolute;
+  width: 32.5rem;
+  margin-top: 18.75rem;
   margin-left: 5rem; }
+  #contactPage #contactForm input :not(input[type=submit]) {
+    font-family: "Liberation Sans", sans-serif;
+    font-size: 1.25em;
+    height: 3.4375rem;
+    padding: 0 0.9375rem;
+    border: none;
+    background-color: #37393B; }
+  #contactPage #contactForm input[placeholder] {
+    font-family: "Liberation Sans", sans-serif;
+    font-size: 1.25em;
+    color: #E6E6E6; }
+  #contactPage #contactForm input[name=subject], #contactPage #contactForm textarea {
+    display: block; }
+#contactPage button {
+  position: absolute; }
 
-/*# sourceMappingURL=landing.css.map */
+/*# sourceMappingURL=contact.css.map */
