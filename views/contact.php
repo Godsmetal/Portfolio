@@ -22,12 +22,12 @@
             
             
             <form id='contactForm'>
-                <input type='text' name='name' placeholder='Name'>
-                <input type='text' name='email' placeholder='Email'>
-                <input type='text' name='subject' placeholder='Subject'>
-                <textarea name='message'>Message</textarea>
+                <input type='text' name='name' placeholder='Name' class='shadow'>
+                <input type='text' name='email' placeholder='Email' class='shadow'>
+                <input type='text' name='subject' placeholder='Subject' class='shadow'>
+                <textarea name='message' class='shadow' placeholder="Message" maxlength="850"></textarea>
 
-                <input type='submit' value='Send'>
+                <input type='submit' value='Send' class='submit'>
             </form>
             
             <div class='overlay'><img></div>

@@ -35,27 +35,74 @@
         margin-top: pxToRem(300);
         margin-left: pxToRem(80);
         
-        input :not(input[type=submit]) {
+        //All includes exclude submit button
+        input:not(.submit) {
             font-family: $defaultFont;
             font-size: pxToEm(20);
             height: pxToRem(55);
-            padding: 0 pxToRem(15);
             border: none;
             background-color: #37393B;
+            text-indent: pxToRem(15);
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
         
-        input[placeholder] {
+        input[placeholder], textarea {
             font-family: $defaultFont;
             font-size: pxToEm(20);
             color: $offwhite;
         }
         
-        input[name=subject], textarea {
+        input[name=subject] {
             display: block;
+            width: 100%;
+            margin-top: pxToRem(15);
         }
-    }
-    
-    button {
-        position: absolute;
+        
+        input[name=name] {
+            margin-right: pxToRem(13);
+            width: pxToRem(250);
+        }
+        
+        input[name=email] {
+            width: pxToRem(250);
+        }
+        
+        textarea {
+            display: block;
+            resize: none;
+            border: none;
+            height: pxToRem(230);
+            width: 100%;
+            margin-top: pxToRem(15);
+            padding-top: pxToRem(20);
+            text-indent: pxToRem(15);
+            background-color: #37393B;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        
+        input:focus, textarea:focus {
+            -webkit-transition: all 0.30s ease-in-out;
+            -moz-transition: all 0.30s ease-in-out;
+            -ms-transition: all 0.30s ease-in-out;
+            -o-transition: all 0.30s ease-in-out;
+            outline: none;
+            border: 1px solid $gold;
+        }
+        
+        input:-webkit-autofill,
+        input:-webkit-autofill:hover, 
+        input:-webkit-autofill:focus, 
+        input:-webkit-autofill:active  {
+            -webkit-box-shadow: 0 0 0 30px #37393B inset !important;
+            color: $offwhite;
+        }
+        
+        .submit {
+            float: right;
+            font-size: pxToEm(18);
+            margin-top: pxToRem(15);
+        }
     }
 }

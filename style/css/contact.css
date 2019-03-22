@@ -4336,6 +4336,10 @@ body {
       color: white; }
   body h1 span {
     display: block; }
+  body .shadow {
+    -webkit-box-shadow: 0 0 0.75rem 0 rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 0 0.75rem 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 0.75rem 0 rgba(0, 0, 0, 0.5); }
 
 body, html {
   height: 100%; }
@@ -4368,20 +4372,56 @@ body, html {
   width: 32.5rem;
   margin-top: 18.75rem;
   margin-left: 5rem; }
-  #contactPage #contactForm input :not(input[type=submit]) {
+  #contactPage #contactForm input:not(.submit) {
     font-family: "Liberation Sans", sans-serif;
     font-size: 1.25em;
     height: 3.4375rem;
-    padding: 0 0.9375rem;
     border: none;
-    background-color: #37393B; }
-  #contactPage #contactForm input[placeholder] {
+    background-color: #37393B;
+    text-indent: 0.9375rem;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+  #contactPage #contactForm input[placeholder], #contactPage #contactForm textarea {
     font-family: "Liberation Sans", sans-serif;
     font-size: 1.25em;
     color: #E6E6E6; }
-  #contactPage #contactForm input[name=subject], #contactPage #contactForm textarea {
-    display: block; }
-#contactPage button {
-  position: absolute; }
+  #contactPage #contactForm input[name=subject] {
+    display: block;
+    width: 100%;
+    margin-top: 0.9375rem; }
+  #contactPage #contactForm input[name=name] {
+    margin-right: 0.8125rem;
+    width: 15.625rem; }
+  #contactPage #contactForm input[name=email] {
+    width: 15.625rem; }
+  #contactPage #contactForm textarea {
+    display: block;
+    resize: none;
+    border: none;
+    height: 14.375rem;
+    width: 100%;
+    margin-top: 0.9375rem;
+    padding-top: 1.25rem;
+    text-indent: 0.9375rem;
+    background-color: #37393B;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+  #contactPage #contactForm input:focus, #contactPage #contactForm textarea:focus {
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;
+    border: 1px solid #DDA454; }
+  #contactPage #contactForm input:-webkit-autofill,
+  #contactPage #contactForm input:-webkit-autofill:hover,
+  #contactPage #contactForm input:-webkit-autofill:focus,
+  #contactPage #contactForm input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px #37393B inset !important;
+    color: #E6E6E6; }
+  #contactPage #contactForm .submit {
+    float: right;
+    font-size: 1.125em;
+    margin-top: 0.9375rem; }
 
 /*# sourceMappingURL=contact.css.map */

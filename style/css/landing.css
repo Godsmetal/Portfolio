@@ -4336,6 +4336,10 @@ body {
       color: white; }
   body h1 span {
     display: block; }
+  body .shadow {
+    -webkit-box-shadow: 0 0 0.75rem 0 rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 0 0.75rem 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 0.75rem 0 rgba(0, 0, 0, 0.5); }
 
 body, html {
   height: 100%; }
