@@ -53,12 +53,6 @@
             color: $offwhite;
         }
         
-        input[name=subject] {
-            display: block;
-            width: 100%;
-            margin-top: pxToRem(15);
-        }
-        
         input[name=name] {
             margin-right: pxToRem(13);
             width: pxToRem(250);
@@ -68,6 +62,12 @@
             width: pxToRem(250);
         }
         
+        input[name=subject] {
+            display: block;
+            width: 100%;
+            margin-top: pxToRem(15);
+        }
+        
         textarea {
             display: block;
             resize: none;
@@ -75,11 +75,11 @@
             height: pxToRem(230);
             width: 100%;
             margin-top: pxToRem(15);
-            padding-top: pxToRem(20);
-            text-indent: pxToRem(15);
+            padding: pxToRem(15);
             background-color: #37393B;
             overflow: hidden;
             text-overflow: ellipsis;
+            box-sizing: border-box;
         }
         
         input:focus, textarea:focus {
@@ -91,18 +91,21 @@
             border: 1px solid $gold;
         }
         
-        input:-webkit-autofill,
-        input:-webkit-autofill:hover, 
-        input:-webkit-autofill:focus, 
-        input:-webkit-autofill:active  {
-            -webkit-box-shadow: 0 0 0 30px #37393B inset !important;
-            color: $offwhite;
-        }
-        
         .submit {
             float: right;
             font-size: pxToEm(18);
             margin-top: pxToRem(15);
+        }
+        
+        //Google Chrome autofill styling
+        input:-webkit-autofill,
+        input:-webkit-autofill:hover, 
+        input:-webkit-autofill:focus, 
+        input:-webkit-autofill:active  {
+            -webkit-box-shadow: 0 0 pxToRem(12) 0 rgba(0,0,0,0.5) !important;
+            -webkit-text-fill-color: $offwhite !important;
+            transition: background-color 5500s ease-in-out 0s;
+            caret-color: $offwhite;
         }
     }
 }
