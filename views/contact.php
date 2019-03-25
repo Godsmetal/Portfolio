@@ -21,13 +21,13 @@
             <h2>If you would like to reach out to me for further questions, don't hesitate to reach me through the form below. Or call me at (267) 371 0626</h2>
             
             
-            <form id='contactForm'>
+            <form id='contactForm' action='../includes/contactform.php' method='post'>
                 <input type='text' name='name' placeholder='Name' class='shadow'>
                 <input type='text' name='email' placeholder='Email' class='shadow'>
                 <input type='text' name='subject' placeholder='Subject' class='shadow'>
                 <textarea name='message' class='shadow' placeholder="Message" maxlength="600"></textarea>
 
-                <input type='submit' value='Send' class='submit'>
+                <button type='submit' name='submit' class='submit'>Send</button>
             </form>
             
             <div class='overlay'><img></div>

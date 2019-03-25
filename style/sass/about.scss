@@ -1,0 +1,24 @@
+@import "style.scss";
+
+#aboutPage {
+    
+    .overlay {
+        background-image: url(../../assets/about-background.jpg);
+        opacity: 0.25;
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        background-position: center 10%;
+    }
+    
+    h1 {
+        position: absolute;
+        color: $gold;
+    }
+    
+    h2 {
+        position: absolute;
+    }
+    
+}
