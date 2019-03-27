@@ -1,0 +1,25 @@
+@import "style.scss";
+
+#projectsPage {
+    
+    .overlay {
+        background-image: url(../../assets/projects-background.jpeg);
+        background-position: center 10%;
+        opacity: 0.25;
+    }
+    
+    h1 {
+        color: $gold;
+        position: absolute;
+        top: pxToRem(180);
+        right: pxToRem(200);
+        font-size: pxToEm(52);
+    }
+    
+    p {
+        font-size: pxToEm(18);
+        position: absolute;
+        right: pxToRem(100);
+        top: pxToRem(290);
+    }
+}

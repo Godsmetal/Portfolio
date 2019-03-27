@@ -14,11 +14,36 @@
     
     h1 {
         position: absolute;
+        margin-top: pxToRem(115);
+        margin-left: pxToRem(85);
+        font-size: pxToEm(52);
         color: $gold;
     }
     
     h2 {
         position: absolute;
+        font-weight: normal;
+        font-size: pxToEm(22);
+        margin-top: pxToRem(225);
+        margin-left: pxToRem(85);
+        width: pxToRem(540);
+        
+        span {
+            margin-bottom: pxToRem(40);
+        }
+        
+        a {
+            color: $gold;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        a:after {
+            content: '';
+            height: 1px;          // add up to active link margin
+            background: $gold;
+            display: block;
+        }
     }
     
 }

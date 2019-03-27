@@ -4334,7 +4334,7 @@ body {
     body .container button:hover, body .container input[type=submit]:hover {
       box-shadow: inset 10.9375rem 0 0 0 #DDA454;
       color: white; }
-  body h1 span {
+  body h1 span, body h2 span {
     display: block; }
   body .shadow {
     -webkit-box-shadow: 0 0 0.75rem 0 rgba(0, 0, 0, 0.5);

@@ -4344,37 +4344,20 @@ body {
 body, html {
   height: 100%; }
 
-#aboutPage .overlay {
-  background-image: url(../../assets/about-background.jpg);
-  opacity: 0.25;
-  -moz-transform: scaleX(-1);
-  -o-transform: scaleX(-1);
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-  background-position: center 10%; }
-#aboutPage h1 {
+#projectsPage .overlay {
+  background-image: url(../../assets/projects-background.jpeg);
+  background-position: center 10%;
+  opacity: 0.25; }
+#projectsPage h1 {
+  color: #DDA454;
   position: absolute;
-  margin-top: 7.1875rem;
-  margin-left: 5.3125rem;
-  font-size: 3.25em;
-  color: #DDA454; }
-#aboutPage h2 {
+  top: 11.25rem;
+  right: 12.5rem;
+  font-size: 3.25em; }
+#projectsPage p {
+  font-size: 1.125em;
   position: absolute;
-  font-weight: normal;
-  font-size: 1.375em;
-  margin-top: 14.0625rem;
-  margin-left: 5.3125rem;
-  width: 33.75rem; }
-  #aboutPage h2 span {
-    margin-bottom: 2.5rem; }
-  #aboutPage h2 a {
-    color: #DDA454;
-    text-decoration: none;
-    display: inline-block; }
-  #aboutPage h2 a:after {
-    content: '';
-    height: 1px;
-    background: #DDA454;
-    display: block; }
+  right: 6.25rem;
+  top: 18.125rem; }
 
-/*# sourceMappingURL=about.css.map */
+/*# sourceMappingURL=projects.css.map */
