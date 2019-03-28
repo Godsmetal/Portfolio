@@ -17,6 +17,9 @@
         
         <!-- Main Content -->
         <div class='container'>
+            
+            <img class='laptop' src='../assets/laptop-ninja.png'>
+            
             <h1>Ninja Kitchen</h1>
             
             <p>- Full scale front-end builds of desktop and mobile experiences for<br>predominant pages<br>

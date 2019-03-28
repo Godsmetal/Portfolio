@@ -114,15 +114,16 @@ body {
         
         //Background image
         .overlay {
+            position: relative;
             height: 100%;
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center center;
+            z-index: -1;
         }
         
         //Primary and secondary fonts
         h1, h2 {
-            z-index: 1;
             letter-spacing: pxToRem(1.2);
         }
         
@@ -137,7 +138,6 @@ body {
             text-decoration: none;
             text-align: center;
             cursor: pointer;
-            z-index: 1;
             outline-style: none;
             transition: .8s;
         }

@@ -4311,12 +4311,13 @@ body {
   body .container {
     width: 100%; }
     body .container .overlay {
+      position: relative;
       height: 100%;
       background-size: cover;
       background-repeat: no-repeat;
-      background-position: center center; }
+      background-position: center center;
+      z-index: -1; }
     body .container h1, body .container h2 {
-      z-index: 1;
       letter-spacing: 0.075rem; }
     body .container button, body .container input[type=submit] {
       height: 2.8125rem;
@@ -4328,7 +4329,6 @@ body {
       text-decoration: none;
       text-align: center;
       cursor: pointer;
-      z-index: 1;
       outline-style: none;
       transition: .8s; }
     body .container button:hover, body .container input[type=submit]:hover {

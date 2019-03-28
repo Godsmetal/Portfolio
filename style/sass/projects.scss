@@ -18,8 +18,13 @@
     
     p {
         font-size: pxToEm(18);
+        line-height: pxToEm(36);
         position: absolute;
         right: pxToRem(100);
         top: pxToRem(290);
+    }
+    
+    .laptop {
+        position: absolute;
     }
 }
