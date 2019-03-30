@@ -4348,19 +4348,31 @@ body, html {
   background-image: url(../../assets/projects-background.jpeg);
   background-position: center 10%;
   opacity: 0.25; }
-#projectsPage h1 {
-  color: #DDA454;
+#projectsPage .project-container {
   position: absolute;
   top: 11.25rem;
-  right: 12.5rem;
-  font-size: 3.25em; }
-#projectsPage p {
+  right: 12.5rem; }
+#projectsPage h1 {
+  color: #DDA454;
+  font-size: 3.25em;
+  text-align: center; }
+#projectsPage ul {
   font-size: 1.125em;
   line-height: 2.25em;
+  list-style-type: none; }
+#projectsPage ul > li:before {
+  content: "-";
+  /* en dash */
   position: absolute;
-  right: 6.25rem;
-  top: 18.125rem; }
+  margin-left: -1em; }
+#projectsPage p {
+  font-style: italic;
+  font-size: 1em;
+  text-align: center;
+  margin-top: 2.5rem; }
 #projectsPage .laptop {
-  position: absolute; }
+  position: absolute;
+  top: 16.875rem;
+  left: 7.8125rem; }
 
 /*# sourceMappingURL=projects.css.map */

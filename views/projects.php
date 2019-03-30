@@ -20,14 +20,24 @@
             
             <img class='laptop' src='../assets/laptop-ninja.png'>
             
-            <h1>Ninja Kitchen</h1>
+            <div class='project-container'>
             
-            <p>- Full scale front-end builds of desktop and mobile experiences for<br>predominant pages<br>
-                - System integration tests between staging and production servers<br>
-                - Quality assurance solutions<br>
-                - Data entry of various components<br>
-                - Monthly traffic in the millions<br>
-                - Award winning e-commerce website</p>
+                <h1>Ninja Kitchen</h1>
+            
+                <ul>
+                    <li>Full scale front-end builds of desktop and mobile experiences for<br>predominant pages</li>
+                    <li>System integration tests between staging and production servers</li>
+                    <li>Quality assurance solutions</li>
+                    <li>Data entry of various components</li>
+                    <li>Monthly traffic in the millions</li>
+                    <li>Award winning e-commerce website</li>
+                </ul>
+
+                <p>Confidential - Therefore code will not be distributed</p>
+            </div>
+            
+            
+
             <div class='overlay'><img></div>
         </div>
         

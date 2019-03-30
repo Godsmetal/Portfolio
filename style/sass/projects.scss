@@ -8,23 +8,41 @@
         opacity: 0.25;
     }
     
-    h1 {
-        color: $gold;
+    .project-container {
         position: absolute;
         top: pxToRem(180);
         right: pxToRem(200);
+    }
+    
+    h1 {
+        color: $gold;
         font-size: pxToEm(52);
+        text-align: center;
+    }
+    
+    ul {
+        font-size: pxToEm(18);
+        line-height: pxToEm(36);
+        list-style-type: none;
+    }
+    
+    //Dash in front of list elements
+    ul > li:before {
+        content: "-"; /* en dash */
+        position: absolute;
+        margin-left: -1em;
     }
     
     p {
-        font-size: pxToEm(18);
-        line-height: pxToEm(36);
-        position: absolute;
-        right: pxToRem(100);
-        top: pxToRem(290);
+        font-style: italic;
+        font-size: pxToEm(16);
+        text-align: center;
+        margin-top: pxToRem(40);
     }
     
     .laptop {
         position: absolute;
+        top: pxToRem(270);
+        left: pxToRem(125);
     }
 }
