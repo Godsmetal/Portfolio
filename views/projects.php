@@ -20,11 +20,13 @@
             
             <img class='laptop' src='../assets/laptop-ninja.png'>
             
+            <img class='phone' src='../assets/phone-ninja.png'>
+            
             <div class='project-container'>
             
                 <h1>Ninja Kitchen</h1>
             
-                <ul>
+                <ul class='description'>
                     <li>Full scale front-end builds of desktop and mobile experiences for<br>predominant pages</li>
                     <li>System integration tests between staging and production servers</li>
                     <li>Quality assurance solutions</li>

@@ -4355,16 +4355,17 @@ body, html {
 #projectsPage h1 {
   color: #DDA454;
   font-size: 3.25em;
-  text-align: center; }
-#projectsPage ul {
+  text-align: center;
+  margin-bottom: 2.625rem; }
+#projectsPage .description {
   font-size: 1.125em;
   line-height: 2.25em;
   list-style-type: none; }
-#projectsPage ul > li:before {
-  content: "-";
-  /* en dash */
-  position: absolute;
-  margin-left: -1em; }
+  #projectsPage .description li:before {
+    content: "-";
+    /* en dash */
+    position: absolute;
+    margin-left: -1em; }
 #projectsPage p {
   font-style: italic;
   font-size: 1em;
@@ -4373,6 +4374,12 @@ body, html {
 #projectsPage .laptop {
   position: absolute;
   top: 16.875rem;
-  left: 7.8125rem; }
+  left: 7.8125rem;
+  width: 21.875rem; }
+#projectsPage .phone {
+  position: absolute;
+  top: 16.875rem;
+  left: 31.875rem;
+  width: 7.5rem; }
 
 /*# sourceMappingURL=projects.css.map */
