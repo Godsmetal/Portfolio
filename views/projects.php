@@ -38,8 +38,14 @@
                 <p>Confidential - Therefore code will not be distributed</p>
             </div>
             
+            <ul class='carousel'>
+                <li class='active'></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
             
-
             <div class='overlay'><img></div>
         </div>
         

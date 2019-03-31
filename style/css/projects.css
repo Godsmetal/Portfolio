@@ -4381,5 +4381,23 @@ body, html {
   top: 16.875rem;
   left: 31.875rem;
   width: 7.5rem; }
+#projectsPage .carousel {
+  position: absolute;
+  display: block;
+  bottom: 2.5rem;
+  left: 50%;
+  transform: translateX(-50%); }
+  #projectsPage .carousel li {
+    display: inline-block;
+    margin-left: 1.875rem;
+    color: #E6E6E6;
+    font-size: 2.1875em; }
+    #projectsPage .carousel li.active {
+      color: #DDA454 !important; }
+  #projectsPage .carousel li::before {
+    content: "";
+    display: list-item; }
+  #projectsPage .carousel li:hover {
+    cursor: pointer; }
 
 /*# sourceMappingURL=projects.css.map */

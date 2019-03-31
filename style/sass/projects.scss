@@ -60,4 +60,36 @@
         left: pxToRem(510);
         width: pxToRem(120);
     }
+    
+    //projects carousel
+    .carousel {
+        position: absolute;
+        display: block;
+        bottom: pxToRem(40);
+        left: 50%;
+        transform: translateX(-50%);
+        
+        //bullet points
+        li {
+            display: inline-block;
+            margin-left: pxToRem(30);
+            color: $offwhite;
+            font-size: pxToEm(35);
+            
+            //active project
+            &.active {
+                color: $gold !important;
+            }
+        }
+        
+        //pseduo to allow bullets to be inline
+        li::before {
+            content: "";
+            display: list-item;
+        }
+        
+        li:hover {
+            cursor: pointer;
+        }
+    }
 }
