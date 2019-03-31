@@ -1,0 +1,35 @@
+[
+    {
+        "name": "Ninja Kitchen",
+        "description": [
+            "Full scale front-end builds of desktop and mobile experiences for predominant pages",
+            "System integration tests between staging and production servers",
+            "Quality assurance solutions",
+            "Data entry of various components",
+            "Monthly traffic in the millions",
+            "Award winning e-commerce website"
+        ]
+    },
+    
+    {
+        "name": "Shark Clean",
+        "description": [
+            "test1",
+            "test2",
+            "test3",
+            "test4",
+            "test5"
+        ]
+    },
+    
+    {
+        "name": "Rochester Riverside Convention Center",
+        "description": [
+            "test1",
+            "test2",
+            "test3",
+            "test4",
+            "test5"
+        ]
+    }
+]
