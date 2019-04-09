@@ -1,5 +1,8 @@
 [
     {
+        "id": "1",
+        "image-laptop": "laptop-ninja",
+        "image-phone": "phone-ninja",
         "name": "Ninja Kitchen",
         "description": [
             "Full scale front-end builds of desktop and mobile experiences for predominant pages",
@@ -12,6 +15,7 @@
     },
     
     {
+        "id": "2",
         "name": "Shark Clean",
         "description": [
             "test1",
@@ -23,6 +27,7 @@
     },
     
     {
+        "id": "3",
         "name": "Rochester Riverside Convention Center",
         "description": [
             "test1",

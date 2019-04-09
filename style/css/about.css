@@ -4319,7 +4319,7 @@ body {
       z-index: -1; }
     body .container h1, body .container h2 {
       letter-spacing: 0.075rem; }
-    body .container button, body .container input[type=submit] {
+    body .container button:not(.owl-dot), body .container input[type=submit]:not(.owl-dot) {
       height: 2.8125rem;
       width: 10.9375rem;
       border: 0.125rem solid #DDA454;
@@ -4331,9 +4331,9 @@ body {
       cursor: pointer;
       outline-style: none;
       transition: .8s; }
-    body .container button:hover, body .container input[type=submit]:hover {
-      box-shadow: inset 10.9375rem 0 0 0 #DDA454;
-      color: white; }
+      body .container button:not(.owl-dot):hover, body .container button:not(.owl-dot) input[type=submit]:hover, body .container input[type=submit]:not(.owl-dot):hover, body .container input[type=submit]:not(.owl-dot) input[type=submit]:hover {
+        box-shadow: inset 10.9375rem 0 0 0 #DDA454;
+        color: white; }
   body h1 span, body h2 span {
     display: block; }
   body .shadow {

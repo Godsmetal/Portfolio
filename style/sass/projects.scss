@@ -2,16 +2,34 @@
 
 #projectsPage {
     
+    //Hide carousel overflow
+    overflow-x: hidden;
+    
     .overlay {
         background-image: url(../../assets/projects-background.jpeg);
         background-position: center 10%;
         opacity: 0.25;
     }
     
-    .project-container {
+    //carousel
+    .owl-carousel{
         position: absolute;
-        top: pxToRem(180);
-        right: pxToRem(200);
+        height: 100%;
+        
+        .item {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+        
+        .owl-dot {
+            outline-style: none;
+            &.active{
+                span {
+                    background: $gold;
+                }
+            }
+        }
     }
     
     //project header
@@ -28,6 +46,7 @@
         font-size: pxToEm(18);
         line-height: pxToEm(36);
         list-style-type: none;
+        
         
         //Dash in front of list elements
         li:before {
@@ -61,35 +80,5 @@
         width: pxToRem(120);
     }
     
-    //projects carousel
-    .carousel {
-        position: absolute;
-        display: block;
-        bottom: pxToRem(40);
-        left: 50%;
-        transform: translateX(-50%);
-        
-        //bullet points
-        li {
-            display: inline-block;
-            margin-left: pxToRem(30);
-            color: $offwhite;
-            font-size: pxToEm(35);
-            
-            //active project
-            &.active {
-                color: $gold !important;
-            }
-        }
-        
-        //pseduo to allow bullets to be inline
-        li::before {
-            content: "";
-            display: list-item;
-        }
-        
-        li:hover {
-            cursor: pointer;
-        }
-    }
+    
 }

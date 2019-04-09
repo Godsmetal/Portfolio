@@ -128,7 +128,7 @@ body {
         }
         
         //Primary button styling
-        button, input[type=submit] {
+        button:not(.owl-dot), input[type=submit]:not(.owl-dot) {
             height: pxToRem(45);
             width: pxToRem(175);
             border: pxToRem(2) solid $gold;
@@ -140,11 +140,11 @@ body {
             cursor: pointer;
             outline-style: none;
             transition: .8s;
-        }
-        
-        button:hover, input[type=submit]:hover {
-            box-shadow: inset pxToRem(175) 0 0 0 $gold;
-            color: white;
+            
+            &:hover, input[type=submit]:hover {
+                box-shadow: inset pxToRem(175) 0 0 0 $gold;
+                color: white;
+            }
         }
     }
     

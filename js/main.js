@@ -15,5 +15,15 @@ $(function() {
             $this.addClass('active');
         }
     });
+
+    //If owl carousel exists, setup the projects page
+    if($('.owl-carousel').length) {
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            slideSpeed: 300,
+            paginationSpeed: 400,
+            items: 1
+        });
+    }
     
 });
