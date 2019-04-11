@@ -4356,16 +4356,24 @@ body, html {
     #projectsPage .owl-carousel .item {
       display: block;
       width: 100%;
-      height: auto; }
+      height: auto;
+      padding: 0 4.375rem; }
+    #projectsPage .owl-carousel .owl-dots {
+      padding: 0 4.375rem;
+      margin-top: 6.25rem; }
     #projectsPage .owl-carousel .owl-dot {
       outline-style: none; }
       #projectsPage .owl-carousel .owl-dot.active span {
         background: #DDA454; }
+  #projectsPage .info-container {
+    display: inline-block;
+    margin-top: 11.25rem; }
   #projectsPage h1 {
     color: #DDA454;
     font-size: 3.25em;
     text-align: center;
-    margin-bottom: 2.625rem; }
+    margin-bottom: 2.625rem;
+    margin-top: 0; }
   #projectsPage .description {
     font-size: 1.125em;
     line-height: 2.25em;
@@ -4380,15 +4388,16 @@ body, html {
     font-size: 1em;
     text-align: center;
     margin-top: 2.5rem; }
+  #projectsPage .image-container {
+    display: inline-block;
+    margin-right: 5.9375rem;
+    vertical-align: 3.75rem; }
   #projectsPage .laptop {
-    position: absolute;
-    top: 16.875rem;
-    left: 7.8125rem;
+    display: inline-block;
+    margin-right: 2.5rem;
     width: 21.875rem; }
   #projectsPage .phone {
-    position: absolute;
-    top: 16.875rem;
-    left: 31.875rem;
+    display: inline-block;
     width: 7.5rem; }
 
 /*# sourceMappingURL=projects.css.map */

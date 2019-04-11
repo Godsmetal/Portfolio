@@ -19,6 +19,7 @@ $(function() {
     //If owl carousel exists, setup the projects page
     if($('.owl-carousel').length) {
         $('.owl-carousel').owlCarousel({
+            autoHeight: false,
             loop: true,
             slideSpeed: 300,
             paginationSpeed: 400,

@@ -11,17 +11,25 @@
         opacity: 0.25;
     }
     
-    //carousel
+    //projects carousel
     .owl-carousel{
         position: absolute;
         height: 100%;
         
+        //individual project
         .item {
             display: block;
             width: 100%;
             height: auto;
+            padding: 0 pxToRem(70);
         }
         
+        .owl-dots {
+            padding: 0 pxToRem(70);
+            margin-top: pxToRem(100);
+        }
+        
+        //navigation buttons
         .owl-dot {
             outline-style: none;
             &.active{
@@ -32,12 +40,18 @@
         }
     }
     
+    .info-container {
+        display: inline-block;
+        margin-top: pxToRem(180);
+    }
+    
     //project header
     h1 {
         color: $gold;
         font-size: pxToEm(52);
         text-align: center;
         margin-bottom: pxToRem(42);
+        margin-top: 0;
     }
     
     
@@ -64,21 +78,23 @@
         margin-top: pxToRem(40);
     }
     
+    //container for laptop/phone images
+    .image-container {
+        display: inline-block;
+        margin-right: pxToRem(95);
+        vertical-align: pxToRem(60);
+    }
+    
     //laptop image
     .laptop {
-        position: absolute;
-        top: pxToRem(270);
-        left: pxToRem(125);
+        display: inline-block;
+        margin-right: pxToRem(40);
         width: pxToRem(350);
     }
     
     //phone image
     .phone {
-        position: absolute;
-        top: pxToRem(270);
-        left: pxToRem(510);
+        display: inline-block;
         width: pxToRem(120);
     }
-    
-    
 }
