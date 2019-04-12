@@ -149,8 +149,14 @@ body {
     }
     
     //New lines
-    h1,h2 {
+    h1 {
         span {
+            display: block;
+        }
+    }
+    
+    h2 {
+        span:not(.typer):not(.cursor) {
             display: block;
         }
     }
