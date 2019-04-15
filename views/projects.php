@@ -76,6 +76,32 @@
                     </div>
                 </div>
                 
+                <!-- Project Two -->
+                <div class='item'>
+                    
+                    <div class='image-container'>
+                        <img class='laptop' src='../assets/laptop-shark.png'>
+                        <img class='phone' src='../assets/phone-rrcc.png'>
+                    </div>
+                    
+                    <div class='info-container'>
+                    
+                        <h1>Rochester Riverside<br>Convention Center</h1>
+
+                        <ul class='description'>
+                            <li>Mobile application, designed as an online bulletin board for employees</li>
+                            <li>Project manager and sponsor liaison of team</li>
+                            <li>Authentication and authorization of user logins</li>
+                            <li>Application developed using Model/View/Controller system architecture</li>
+                            <li>Full-scale mobile mockups created in Adobe Illustrator</li>
+                            <li>Administrative tools built for application maintainability</li>
+                            <li>Gaant charts used for scheduling as well as weekly scrum</li>
+                        </ul>
+
+                        <p>Confidential - Therefore code will not be distributed</p>
+                        
+                    </div>
+                </div>
                 
             </div>
             
