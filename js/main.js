@@ -26,5 +26,4 @@ $(function() {
             items: 1
         });
     }
-    
 });

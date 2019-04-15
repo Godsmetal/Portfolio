@@ -50,17 +50,17 @@
                     </div>
                 </div>
                 
-                <!-- Project One -->
+                <!-- Project Two -->
                 <div class='item'>
                     
                     <div class='image-container'>
-                        <img class='laptop' src='../assets/laptop-ninja.png'>
-                        <img class='phone' src='../assets/phone-ninja.png'>
+                        <img class='laptop' src='../assets/laptop-shark.png'>
+                        <img class='phone' src='../assets/phone-shark.png'>
                     </div>
                     
                     <div class='info-container'>
                     
-                        <h1>Ninja Kitchen</h1>
+                        <h1>Shark Clean</h1>
 
                         <ul class='description'>
                             <li>Full scale front-end builds of desktop and mobile experiences for<br>predominant pages</li>
@@ -75,6 +75,8 @@
                         
                     </div>
                 </div>
+                
+                
             </div>
             
             <div class='overlay'><img></div>
