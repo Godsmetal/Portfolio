@@ -39,10 +39,10 @@
                         <ul class='description'>
                             <li>Full scale front-end builds of desktop and mobile experiences for<br>predominant pages</li>
                             <li>System integration tests between staging and production servers</li>
-                            <li>Quality assurance solutions</li>
                             <li>Data entry of various components</li>
                             <li>Monthly traffic in the millions</li>
                             <li>Award winning e-commerce website</li>
+                            <li>Programmed using JavaScript, jQuery, PHP, Twig, HTML5/CSS3,<br> Sass, Cornerstone, and Selenium</li>
                         </ul>
 
                         <p>Confidential - Therefore code will not be distributed</p>
@@ -65,10 +65,10 @@
                         <ul class='description'>
                             <li>Full scale front-end builds of desktop and mobile experiences for<br>predominant pages</li>
                             <li>System integration tests between staging and production servers</li>
-                            <li>Quality assurance solutions</li>
                             <li>Data entry of various components</li>
                             <li>Monthly traffic in the millions</li>
                             <li>Award winning e-commerce website</li>
+                            <li>Programmed using JavaScript, jQuery, PHP, Twig, HTML5/CSS3,<br> Sass, Cornerstone, and Selenium</li>
                         </ul>
 
                         <p>Confidential - Therefore code will not be distributed</p>
@@ -76,26 +76,53 @@
                     </div>
                 </div>
                 
-                <!-- Project Two -->
+                <!-- Project Three -->
                 <div class='item'>
                     
                     <div class='image-container'>
-                        <img class='laptop' src='../assets/laptop-shark.png'>
+                        <img class='laptop' src='../assets/laptop-rrcc.png'>
                         <img class='phone' src='../assets/phone-rrcc.png'>
                     </div>
                     
                     <div class='info-container'>
                     
-                        <h1>Rochester Riverside<br>Convention Center</h1>
+                        <h1>Rochester Riverside <br> Convention Center</h1>
 
                         <ul class='description'>
-                            <li>Mobile application, designed as an online bulletin board for employees</li>
+                            <li>Mobile application, designed as online bulletin board for employees</li>
                             <li>Project manager and sponsor liaison of team</li>
                             <li>Authentication and authorization of user logins</li>
                             <li>Application developed using Model/View/Controller system architecture</li>
                             <li>Full-scale mobile mockups created in Adobe Illustrator</li>
                             <li>Administrative tools built for application maintainability</li>
                             <li>Gaant charts used for scheduling as well as weekly scrum</li>
+                            <li>Programmed using PHP, HTML/CSS, Sass, JavaScript, phpMyAdmin,<br> and MySQLi</li>
+                        </ul>
+
+                        <p>Confidential - Therefore code will not be distributed</p>
+                        
+                    </div>
+                </div>
+                
+                <!-- Project Four -->
+                <div class='item'>
+                    
+                    <div class='image-container'>
+                        <img class='laptop' src='../assets/laptop-cptc.png'>
+                        <img class='phone' src='../assets/phone-cptc.png'>
+                    </div>
+                    
+                    <div class='info-container'>
+                    
+                        <h1>Collegiate Pentesting <br>Competition</h1>
+
+                        <ul class='description'>
+                            <li>Contributed to design, developmental, and implementation processes</li>
+                            <li>Responsive website for desktop, tablet, and mobile devices</li>
+                            <li>Designed to recruit new members and attract sponsors</li>
+                            <li>Created for Rochester Institute of Technology</li>
+                            <li>Co-developed remotely with partner</li>
+                            <li>Programmed using HTML5/CSS3, jQuery, JavaScript, and Git</li>
                         </ul>
 
                         <p>Confidential - Therefore code will not be distributed</p>
