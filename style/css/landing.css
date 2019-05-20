@@ -4270,13 +4270,16 @@ readers do not read off random characters that represent icons */
 
 @font-face {
   src: url("{}/assets/fonts/LiberationSans/*"); }
+/* ------- Non-Retina Screens ------- */
+@media screen and (min-width: 1920px) and (-webkit-min-device-pixel-ratio: 1) {
+  body, html {
+    font-size: 18px; } }
 body {
   background-color: #252627;
   font-family: "Liberation Sans", sans-serif;
   color: #FFFFFF;
   margin: 0;
-  display: flex;
-  font-size: 16px; }
+  display: flex; }
   body .sidenav {
     height: 100%;
     width: 55px;
@@ -4288,7 +4291,7 @@ body {
     overflow-y: hidden; }
     body .sidenav a {
       display: block;
-      margin-top: 2.5rem;
+      margin-top: 2.2222222222rem;
       transition: 0.3s; }
       body .sidenav a.active i {
         color: #DDA454; }
@@ -4296,12 +4299,12 @@ body {
       color: #DDA454; }
     body .sidenav .upperNav {
       position: absolute;
-      top: 10.9375rem;
+      top: 9.7222222222rem;
       left: 50%;
       transform: translate(-50%, 0); }
     body .sidenav .lowerNav {
       position: absolute;
-      bottom: 2.8125rem;
+      bottom: 2.5rem;
       left: 50%;
       transform: translate(-50%, 0); }
   body i {
@@ -4318,12 +4321,12 @@ body {
       background-position: center center;
       z-index: -1; }
     body .container h1, body .container h2 {
-      letter-spacing: 0.075rem; }
+      letter-spacing: 0.0666666667rem; }
     body .container button:not(.owl-dot), body .container input[type=submit]:not(.owl-dot) {
-      height: 2.8125rem;
-      width: 10.9375rem;
-      border: 0.125rem solid #DDA454;
-      border-radius: 0.25rem;
+      height: 2.5rem;
+      width: 9.7222222222rem;
+      border: 0.1111111111rem solid #DDA454;
+      border-radius: 0.2222222222rem;
       color: #DDA454;
       background-color: transparent;
       text-decoration: none;
@@ -4332,16 +4335,16 @@ body {
       outline-style: none;
       transition: .8s; }
       body .container button:not(.owl-dot):hover, body .container button:not(.owl-dot) input[type=submit]:hover, body .container input[type=submit]:not(.owl-dot):hover, body .container input[type=submit]:not(.owl-dot) input[type=submit]:hover {
-        box-shadow: inset 10.9375rem 0 0 0 #DDA454;
+        box-shadow: inset 9.7222222222rem 0 0 0 #DDA454;
         color: white; }
   body h1 span {
     display: block; }
   body h2 span:not(.typer):not(.cursor) {
     display: block; }
   body .shadow {
-    -webkit-box-shadow: 0 0 0.75rem 0 rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: 0 0 0.75rem 0 rgba(0, 0, 0, 0.5);
-    box-shadow: 0 0 0.75rem 0 rgba(0, 0, 0, 0.5); }
+    -webkit-box-shadow: 0 0 0.6666666667rem 0 rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 0 0.6666666667rem 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 0.6666666667rem 0 rgba(0, 0, 0, 0.5); }
 
 body, html {
   height: 100%; }
@@ -4351,18 +4354,18 @@ body, html {
   opacity: 0.25; }
 #landingPage .container h1 {
   position: absolute;
-  font-size: 3.25em;
-  margin-top: 12.5rem;
-  margin-left: 5rem; }
+  font-size: 2.8888888889em;
+  margin-top: 11.1111111111rem;
+  margin-left: 4.4444444444rem; }
 #landingPage .container h2 {
   position: absolute;
   color: #E6E6E6;
-  font-size: 1.6875em;
-  margin-top: 29.375rem;
-  margin-left: 5rem; }
+  font-size: 1.5em;
+  margin-top: 26.1111111111rem;
+  margin-left: 4.4444444444rem; }
 #landingPage .container button {
   position: absolute;
-  margin-top: 33.4375rem;
-  margin-left: 5rem; }
+  margin-top: 29.7222222222rem;
+  margin-left: 4.4444444444rem; }
 
 /*# sourceMappingURL=landing.css.map */

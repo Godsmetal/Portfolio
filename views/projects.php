@@ -3,6 +3,7 @@
 <html>
     <head>
         <title>Mason Santora Portfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel='stylesheet' type='text/css' href='../style/css/projects.css'>
         <link rel="stylesheet" href="../style/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
         <link rel="stylesheet" href="../style/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">

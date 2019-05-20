@@ -12,7 +12,7 @@
 }
 
 //Set default px for conversions
-$basePx: 16;
+//$basePx: 16 !default;
 
 //Set font familes
 $defaultFont: 'Liberation Sans', sans-serif;
@@ -26,8 +26,23 @@ $offwhite: #E6E6E6;
 $white: #FFFFFF;
 $gold: #DDA454;
 
+@mixin fontSize($px) {
+    font-size: $px+px; //16 + px = 16px
+    $basePx: $px !global; //!global makes it global
+}
+
+/* ------- Non-Retina Screens ------- */
+@media screen
+    and (min-width: 1920px)
+    and (-webkit-min-device-pixel-ratio: 1) {
+        //$basePx: 18 !global;
+        body,html {
+            @include fontSize(18);
+        }
+}
+
 //Converts px measurements into em
-@function pxToEm($px) {
+@function pxToEm($px) {    
     @return ($px/$basePx)+0em;
 }
 
@@ -42,7 +57,7 @@ body {
     color: $defaultFontColor;
     margin: 0;
     display: flex;
-    font-size: $basePx+px;
+    //font-size: $basePx+px;
     
     //Side navigation
     .sidenav {
