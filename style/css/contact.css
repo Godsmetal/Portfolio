@@ -4310,6 +4310,9 @@ body {
     color: #E6E6E6;
     font-family: "Font Awesome 5";
     font-size: 24px; }
+  body i:hover {
+    color: #DDA454;
+    cursor: pointer; }
   body .container {
     width: 100%; }
     body .container .overlay {
@@ -4350,7 +4353,7 @@ body {
   body, html {
     font-size: 18px; } }
 @media screen and (min-width: 992px) and (-webkit-min-device-pixel-ratio: 1) {
-  .mobileNav {
+  .fa-bars, .mobileNav-bottom {
     display: none; } }
 @media screen and (min-height: 750px) and (-webkit-min-device-pixel-ratio: 1) {
   body, html {
@@ -4362,19 +4365,35 @@ body {
     height: 3.0555555556rem;
     width: 100%;
     text-align: right; }
-    body .sidenav .upperNav, body .sidenav .lowerNav, html .sidenav .upperNav, html .sidenav .lowerNav {
-      display: none; }
-  body .mobileNav, html .mobileNav {
-    height: inherit; }
-    body .mobileNav i, html .mobileNav i {
+    body .sidenav .fa-bars, html .sidenav .fa-bars {
       margin-right: 1.3888888889rem;
       position: relative;
       top: 50%;
       -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
       transform: translateY(-50%); }
-    body .mobileNav i:hover, html .mobileNav i:hover {
-      cursor: pointer; } }
+    body .sidenav .upperNav, body .sidenav .lowerNav, html .sidenav .upperNav, html .sidenav .lowerNav {
+      display: none; }
+  body .mobileNav, html .mobileNav {
+    position: absolute;
+    bottom: 0;
+    background-color: #181818;
+    width: 100%;
+    height: 3.0555555556rem; }
+    body .mobileNav ul, html .mobileNav ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      margin: 0;
+      padding: 0 2.7777777778rem; } }
+@media screen and (min-width: 991px) and (-webkit-min-device-pixel-ratio: 1) {
+  .mobileNav {
+    display: none; } }
 #contactPage .overlay {
   background-image: url(../../assets/contact-background.jpeg);
   background-position: center 10%;

@@ -128,6 +128,11 @@ body {
         }
     }
     
+    i:hover {
+        color: $gold;
+        cursor: pointer;
+    }
+    
     //Main container
     .container {
         width: 100%;
@@ -200,7 +205,7 @@ body {
 @media screen
     and (min-width: 992px)
     and (-webkit-min-device-pixel-ratio: 1) {
-        .mobileNav {
+        .fa-bars, .mobileNav-bottom {
             display: none;
         }
 }
@@ -220,28 +225,50 @@ body {
     and (-webkit-min-device-pixel-ratio: 1) {
         
         body,html {
+            //Container for top navigation
             .sidenav {
                 position: absolute;
                 height: pxToRem(55);
                 width: 100%;
                 text-align: right;
-
+                
+                .fa-bars {
+                    margin-right: pxToRem(25);
+                    @include vertical-align();
+                }
+                
                 .upperNav, .lowerNav {
                     display: none;
                 }
             }
             
+            //Show mobile navigation
             .mobileNav {
-                height: inherit;
-                
-                i {
-                    margin-right: pxToRem(25);
+                position: absolute;
+                bottom: 0;
+                background-color: $defaultNav;
+                width: 100%;
+                height: pxToRem(55);
+      
+                ul {
+                    list-style: none;
+                    display: flex;
+                    justify-content: space-between;
                     @include vertical-align();
-                }
-                
-                i:hover {
-                    cursor: pointer;
+                    margin: 0;
+                    padding: 0 pxToRem(50);
                 }
             }
+        }
+}
+
+//Leaving Mobile
+@media screen
+    and (min-width: 991px)
+    and (-webkit-min-device-pixel-ratio: 1) {
+ 
+        //Hide mobile navigation
+        .mobileNav {
+            display: none;
         }
 }

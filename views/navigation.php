@@ -15,8 +15,16 @@
     </div>
     
     <!-- Mobile -->
-    <div class='mobileNav'>
-        <i class="fas fa-bars"></i>
-    </div>
+    <i class="fas fa-bars"></i>
     
+</div>
+
+<div class='mobileNav'>
+    <ul>
+        <li><a href=''><i class="fas fa-home"></i></a></li>
+        <li><a href=''><i class="fas fa-user-circle"></i></a></li>
+        <li><a href=''><i class="fas fa-project-diagram"></i></a></li>
+        <li><a href=''><i class="fas fa-envelope"></i></a></li>
+        <li><a href=''><i class="fab fa-linkedin-in"></i></a></li>
+    </ul>
 </div>
