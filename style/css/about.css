@@ -4269,10 +4269,10 @@ readers do not read off random characters that represent icons */
 
 @font-face {
   src: url("{}/assets/fonts/LiberationSans/*"); }
-/* ------- Non-Retina Screens ------- */
-@media screen and (min-width: 1920px) and (-webkit-min-device-pixel-ratio: 1) {
-  body, html {
-    font-size: 18px; } }
+body, html {
+  height: 100%;
+  font-size: 16px; }
+
 body {
   background-color: #252627;
   font-family: "Liberation Sans", sans-serif;
@@ -4290,7 +4290,7 @@ body {
     overflow-y: hidden; }
     body .sidenav a {
       display: block;
-      margin-top: 2.2222222222rem;
+      margin-top: 2.5rem;
       transition: 0.3s; }
       body .sidenav a.active i {
         color: #DDA454; }
@@ -4298,12 +4298,12 @@ body {
       color: #DDA454; }
     body .sidenav .upperNav {
       position: absolute;
-      top: 9.7222222222rem;
+      top: 10.9375rem;
       left: 50%;
       transform: translate(-50%, 0); }
     body .sidenav .lowerNav {
       position: absolute;
-      bottom: 2.5rem;
+      bottom: 2.8125rem;
       left: 50%;
       transform: translate(-50%, 0); }
   body i {
@@ -4320,12 +4320,12 @@ body {
       background-position: center center;
       z-index: -1; }
     body .container h1, body .container h2 {
-      letter-spacing: 0.0666666667rem; }
+      letter-spacing: 0.075rem; }
     body .container button:not(.owl-dot), body .container input[type=submit]:not(.owl-dot) {
-      height: 2.5rem;
-      width: 9.7222222222rem;
-      border: 0.1111111111rem solid #DDA454;
-      border-radius: 0.2222222222rem;
+      height: 2.8125rem;
+      width: 10.9375rem;
+      border: 0.125rem solid #DDA454;
+      border-radius: 0.25rem;
       color: #DDA454;
       background-color: transparent;
       text-decoration: none;
@@ -4334,20 +4334,47 @@ body {
       outline-style: none;
       transition: .8s; }
       body .container button:not(.owl-dot):hover, body .container button:not(.owl-dot) input[type=submit]:hover, body .container input[type=submit]:not(.owl-dot):hover, body .container input[type=submit]:not(.owl-dot) input[type=submit]:hover {
-        box-shadow: inset 9.7222222222rem 0 0 0 #DDA454;
+        box-shadow: inset 10.9375rem 0 0 0 #DDA454;
         color: white; }
   body h1 span {
     display: block; }
   body h2 span:not(.typer):not(.cursor) {
     display: block; }
   body .shadow {
-    -webkit-box-shadow: 0 0 0.6666666667rem 0 rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: 0 0 0.6666666667rem 0 rgba(0, 0, 0, 0.5);
-    box-shadow: 0 0 0.6666666667rem 0 rgba(0, 0, 0, 0.5); }
+    -webkit-box-shadow: 0 0 0.75rem 0 rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 0 0.75rem 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 0.75rem 0 rgba(0, 0, 0, 0.5); }
 
-body, html {
-  height: 100%; }
-
+/* ------- Non-Retina Screens ------- */
+@media screen and (min-width: 1920px) and (-webkit-min-device-pixel-ratio: 1) {
+  body, html {
+    font-size: 18px; } }
+@media screen and (min-width: 992px) and (-webkit-min-device-pixel-ratio: 1) {
+  .mobileNav {
+    display: none; } }
+@media screen and (min-height: 750px) and (-webkit-min-device-pixel-ratio: 1) {
+  body, html {
+    min-height: 750px; } }
+/* ------- Tablet 991,767,479 ------- */
+@media screen and (max-width: 991px) and (-webkit-min-device-pixel-ratio: 1) {
+  body .sidenav, html .sidenav {
+    position: absolute;
+    height: 3.0555555556rem;
+    width: 100%;
+    text-align: right; }
+    body .sidenav .upperNav, body .sidenav .lowerNav, html .sidenav .upperNav, html .sidenav .lowerNav {
+      display: none; }
+  body .mobileNav, html .mobileNav {
+    height: inherit; }
+    body .mobileNav i, html .mobileNav i {
+      margin-right: 1.3888888889rem;
+      position: relative;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%); }
+    body .mobileNav i:hover, html .mobileNav i:hover {
+      cursor: pointer; } }
 #aboutPage .overlay {
   background-image: url(../../assets/about-background.jpg);
   opacity: 0.25;

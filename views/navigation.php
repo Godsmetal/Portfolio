@@ -13,4 +13,10 @@
         <a href='http://www.linkedin.com/in/masonsantora' target='_blank'><i class="fab fa-linkedin-in"></i></a>
         <a href='https://github.com/Godsmetal' target='_blank'><i class="fab fa-github"></i></a>
     </div>
+    
+    <!-- Mobile -->
+    <div class='mobileNav'>
+        <i class="fas fa-bars"></i>
+    </div>
+    
 </div>

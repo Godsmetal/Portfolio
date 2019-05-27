@@ -26,19 +26,18 @@ $offwhite: #E6E6E6;
 $white: #FFFFFF;
 $gold: #DDA454;
 
+//Mixin that is used to update the current font-size of page for responsiveness
 @mixin fontSize($px) {
     font-size: $px+px; //16 + px = 16px
     $basePx: $px !global; //!global makes it global
 }
 
-/* ------- Non-Retina Screens ------- */
-@media screen
-    and (min-width: 1920px)
-    and (-webkit-min-device-pixel-ratio: 1) {
-        //$basePx: 18 !global;
-        body,html {
-            @include fontSize(18);
-        }
+@mixin vertical-align($position: relative) {
+    position: $position;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
 //Converts px measurements into em
@@ -46,8 +45,14 @@ $gold: #DDA454;
     @return ($px/$basePx)+0em;
 }
 
+//Converts px measurements into rem
 @function pxToRem($px) {
     @return ($px/$basePx)+0rem;
+}
+
+body,html {
+    height: 100%;
+    @include fontSize(16); //set a base font for responsiveness
 }
 
 //Global styling
@@ -183,6 +188,60 @@ body {
     }
 }
 
-body,html {
-    height: 100%;
+/* ------- Non-Retina Screens ------- */
+@media screen
+    and (min-width: 1920px)
+    and (-webkit-min-device-pixel-ratio: 1) {
+        body,html {
+            @include fontSize(18); //This makes page responsive
+        }
+}
+
+@media screen
+    and (min-width: 992px)
+    and (-webkit-min-device-pixel-ratio: 1) {
+        .mobileNav {
+            display: none;
+        }
+}
+
+//Height adjustment for nav bar
+@media screen
+    and (min-height: 750px)
+    and (-webkit-min-device-pixel-ratio: 1) {
+        body,html {
+            min-height: 750px;
+        }
+}
+
+/* ------- Tablet 991,767,479 ------- */
+@media screen
+    and (max-width: 991px)
+    and (-webkit-min-device-pixel-ratio: 1) {
+        
+        body,html {
+            .sidenav {
+                position: absolute;
+                height: pxToRem(55);
+                width: 100%;
+                text-align: right;
+
+                .upperNav, .lowerNav {
+                    display: none;
+                }
+            }
+            
+            .mobileNav {
+                height: inherit;
+                
+                i {
+                    margin-right: pxToRem(25);
+                    @include vertical-align();
+                }
+                
+                i:hover {
+                    cursor: pointer;
+                }
+            }
+        }
 }
