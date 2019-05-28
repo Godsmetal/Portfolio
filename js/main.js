@@ -1,6 +1,8 @@
 //On document load
 $(function() {
 
+    /* -------- Navigation -------- */
+    
     //activate the current page on the navigation panel
     //current path
     var current = location.pathname.split('/').pop();
@@ -15,7 +17,23 @@ $(function() {
             $this.addClass('active');
         }
     });
-
+    
+    /* -------- Mobile navigation -------- */
+    $('#menu').click(function(){
+        $(this).toggleClass('active');
+        $('.mobileNav').toggleClass('active');
+        
+        if($('.mobileNav').hasClass('active')) {
+            
+        }
+    });
+        
+    
+    
+    
+    
+    
+    /* -------- Owl Carousel -------- */
     //If owl carousel exists, setup the projects page
     if($('.owl-carousel').length) {
         $('.owl-carousel').owlCarousel({

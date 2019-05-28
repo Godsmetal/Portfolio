@@ -62,7 +62,6 @@ body {
     color: $defaultFontColor;
     margin: 0;
     display: flex;
-    //font-size: $basePx+px;
     
     //Side navigation
     .sidenav {
@@ -131,6 +130,11 @@ body {
     i:hover {
         color: $gold;
         cursor: pointer;
+    }
+    
+    //If navigation activated make it signal that
+    .active {
+        color: $gold;
     }
     
     //Main container
@@ -225,6 +229,8 @@ body {
     and (-webkit-min-device-pixel-ratio: 1) {
         
         body,html {
+            overflow-y: hidden;
+            
             //Container for top navigation
             .sidenav {
                 position: absolute;
@@ -242,14 +248,17 @@ body {
                 }
             }
             
-            //Show mobile navigation
+            //Bottom mobile navigation
+            
+            //Initally set not visible
             .mobileNav {
-                position: absolute;
-                bottom: 0;
-                background-color: $defaultNav;
+                bottom: pxToRem(-55);
                 width: 100%;
                 height: pxToRem(55);
-      
+                background-color: $defaultNav;
+                position: absolute;
+                transition-duration: 300ms;
+                
                 ul {
                     list-style: none;
                     display: flex;
@@ -258,9 +267,31 @@ body {
                     margin: 0;
                     padding: 0 pxToRem(50);
                 }
+                
+                //Make visible
+                &.active {
+                    display: block;
+                    visibility: visible;
+                    bottom: 0;
+                    animation: slideUp .3s;
+                }
             }
+            
         }
+    
+    //Animations for navigation
+    @keyframes slideUp {
+        0% {bottom: pxToRem(-55);}
+        100% {bottom: 0;}
+    }
+
+    @keyframes slideDown {
+        0% {bottom: 0;}
+        100% {bottom: pxToRem(-55); visibility: hidden;}
+    }
 }
+
+
 
 //Leaving Mobile
 @media screen

@@ -15,7 +15,7 @@
     </div>
     
     <!-- Mobile -->
-    <i class="fas fa-bars"></i>
+    <i class="fas fa-bars" id='menu'></i>
     
 </div>
 

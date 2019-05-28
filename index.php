@@ -23,7 +23,7 @@
                 <span class='cursor' data-owner='main'></span>
             </h2>
             
-            <button>CONTACT ME</button>
+            <button>DOWNLOAD RESUME</button>
             
             <div class='overlay'><img></div>
         </div>

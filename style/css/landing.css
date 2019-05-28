@@ -4313,6 +4313,8 @@ body {
   body i:hover {
     color: #DDA454;
     cursor: pointer; }
+  body .active {
+    color: #DDA454; }
   body .container {
     width: 100%; }
     body .container .overlay {
@@ -4360,37 +4362,57 @@ body {
     min-height: 750px; } }
 /* ------- Tablet 991,767,479 ------- */
 @media screen and (max-width: 991px) and (-webkit-min-device-pixel-ratio: 1) {
-  body .sidenav, html .sidenav {
-    position: absolute;
-    height: 3.0555555556rem;
-    width: 100%;
-    text-align: right; }
-    body .sidenav .fa-bars, html .sidenav .fa-bars {
-      margin-right: 1.3888888889rem;
-      position: relative;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%); }
-    body .sidenav .upperNav, body .sidenav .lowerNav, html .sidenav .upperNav, html .sidenav .lowerNav {
-      display: none; }
-  body .mobileNav, html .mobileNav {
-    position: absolute;
-    bottom: 0;
-    background-color: #181818;
-    width: 100%;
-    height: 3.0555555556rem; }
-    body .mobileNav ul, html .mobileNav ul {
-      list-style: none;
-      display: flex;
-      justify-content: space-between;
-      position: relative;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
-      margin: 0;
-      padding: 0 2.7777777778rem; } }
+  body, html {
+    overflow-y: hidden; }
+    body .sidenav, html .sidenav {
+      position: absolute;
+      height: 3.0555555556rem;
+      width: 100%;
+      text-align: right; }
+      body .sidenav .fa-bars, html .sidenav .fa-bars {
+        margin-right: 1.3888888889rem;
+        position: relative;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%); }
+      body .sidenav .upperNav, body .sidenav .lowerNav, html .sidenav .upperNav, html .sidenav .lowerNav {
+        display: none; }
+    body .mobileNav, html .mobileNav {
+      bottom: -3.0555555556rem;
+      width: 100%;
+      height: 3.0555555556rem;
+      background-color: #181818;
+      position: absolute;
+      transition-duration: 300ms; }
+      body .mobileNav ul, html .mobileNav ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        margin: 0;
+        padding: 0 2.7777777778rem; }
+      body .mobileNav.active, html .mobileNav.active {
+        display: block;
+        visibility: visible;
+        bottom: 0;
+        animation: slideUp .3s; }
+
+  @keyframes slideUp {
+    0% {
+      bottom: -3.0555555556rem; }
+    100% {
+      bottom: 0; } }
+  @keyframes slideDown {
+    0% {
+      bottom: 0; }
+    100% {
+      bottom: -3.0555555556rem;
+      visibility: hidden; } } }
 @media screen and (min-width: 991px) and (-webkit-min-device-pixel-ratio: 1) {
   .mobileNav {
     display: none; } }
