@@ -23,7 +23,10 @@
                 <span class='cursor' data-owner='main'></span>
             </h2>
             
-            <button>DOWNLOAD RESUME</button>
+            <form method='get' action='assets/mason-santora-resume.pdf' target='_blank'>
+                <button>DOWNLOAD RESUME</button>
+            </form>
+            
             
             <div class='overlay'><img></div>
         </div>

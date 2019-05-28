@@ -8,7 +8,7 @@ $(function() {
     var current = location.pathname.split('/').pop();
 
     //iterate each link
-    $('.sidenav a').each(function() {
+    $('.nav a').each(function() {
         //curent link
         var $this = $(this);
         
@@ -28,11 +28,6 @@ $(function() {
         }
     });
         
-    
-    
-    
-    
-    
     /* -------- Owl Carousel -------- */
     //If owl carousel exists, setup the projects page
     if($('.owl-carousel').length) {

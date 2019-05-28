@@ -4279,7 +4279,7 @@ body {
   color: #FFFFFF;
   margin: 0;
   display: flex; }
-  body .sidenav {
+  body .nav {
     height: 100%;
     width: 55px;
     background-color: #181818;
@@ -4288,20 +4288,20 @@ body {
     display: inline-block;
     position: relative;
     overflow-y: hidden; }
-    body .sidenav a {
+    body .nav a {
       display: block;
       margin-top: 2.5rem;
       transition: 0.3s; }
-      body .sidenav a.active i {
+      body .nav a.active i {
         color: #DDA454; }
-    body .sidenav a:hover i {
+    body .nav a:hover i {
       color: #DDA454; }
-    body .sidenav .upperNav {
+    body .nav .upperNav {
       position: absolute;
       top: 10.9375rem;
       left: 50%;
       transform: translate(-50%, 0); }
-    body .sidenav .lowerNav {
+    body .nav .lowerNav {
       position: absolute;
       bottom: 2.8125rem;
       left: 50%;
@@ -4364,19 +4364,19 @@ body {
 @media screen and (max-width: 991px) and (-webkit-min-device-pixel-ratio: 1) {
   body, html {
     overflow-y: hidden; }
-    body .sidenav, html .sidenav {
+    body .nav, html .nav {
       position: absolute;
       height: 3.0555555556rem;
       width: 100%;
       text-align: right; }
-      body .sidenav .fa-bars, html .sidenav .fa-bars {
+      body .nav .fa-bars, html .nav .fa-bars {
         margin-right: 1.3888888889rem;
         position: relative;
         top: 50%;
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
         transform: translateY(-50%); }
-      body .sidenav .upperNav, body .sidenav .lowerNav, html .sidenav .upperNav, html .sidenav .lowerNav {
+      body .nav .upperNav, body .nav .lowerNav, html .nav .upperNav, html .nav .lowerNav {
         display: none; }
     body .mobileNav, html .mobileNav {
       bottom: -3.0555555556rem;

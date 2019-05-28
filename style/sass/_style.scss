@@ -64,7 +64,7 @@ body {
     display: flex;
     
     //Side navigation
-    .sidenav {
+    .nav {
         height: 100%;
         width: 55px;
         background-color: $defaultNav;
@@ -232,7 +232,7 @@ body {
             overflow-y: hidden;
             
             //Container for top navigation
-            .sidenav {
+            .nav {
                 position: absolute;
                 height: pxToRem(55);
                 width: 100%;

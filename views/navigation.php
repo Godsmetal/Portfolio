@@ -1,5 +1,5 @@
 <!-- Navigation Bar -->
-<div class='sidenav'>
+<div class='nav'>
     <!-- Upper Navigation -->
     <div class='upperNav'>
         <a href='/index.php'><i class="fas fa-home"></i></a>
