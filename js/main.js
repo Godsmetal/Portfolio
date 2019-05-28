@@ -9,12 +9,12 @@ $(function() {
 
     //iterate each link
     $('.nav a').each(function() {
-        //curent link
+        //current link
         var $this = $(this);
         
         //if current path is like this link, make it active
         if($this.attr('href').indexOf(current) !== -1) {
-            $this.addClass('active');
+            $this.toggleClass('active');
         }
     });
     
@@ -23,8 +23,17 @@ $(function() {
         $(this).toggleClass('active');
         $('.mobileNav').toggleClass('active');
         
+        //Activate the currently loaded page icon
         if($('.mobileNav').hasClass('active')) {
-            
+            $('.mobileNav').find('a').each(function() {
+                console.log($(this));
+                
+               //current link
+                var $this = $(this);
+                if($this.attr('href').indexOf(current) !== -1) {
+                    $this.children(':first').toggleClass('active');
+                }
+            });
         }
     });
         

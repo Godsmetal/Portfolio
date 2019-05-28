@@ -21,10 +21,10 @@
 
 <div class='mobileNav'>
     <ul>
-        <li><a href=''><i class="fas fa-home"></i></a></li>
+        <li><a href='/index.php'><i class="fas fa-home"></i></a></li>
         <li><a href=''><i class="fas fa-user-circle"></i></a></li>
         <li><a href=''><i class="fas fa-project-diagram"></i></a></li>
-        <li><a href=''><i class="fas fa-envelope"></i></a></li>
-        <li><a href=''><i class="fab fa-linkedin-in"></i></a></li>
+        <li><a href='/views/contact.php'><i class="fas fa-envelope"></i></a></li>
+        <li><a href='http://www.linkedin.com/in/masonsantora'><i class="fab fa-linkedin-in"></i></a></li>
     </ul>
 </div>
