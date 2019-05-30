@@ -4441,7 +4441,6 @@ body {
 #contactPage #contactForm {
   z-index: 1;
   position: absolute;
-  width: 28.8888888889rem;
   margin-top: 16.6666666667rem;
   margin-left: 4.4444444444rem; }
   #contactPage #contactForm input:not(.submit) {
