@@ -4359,7 +4359,10 @@ body {
     top: 0; }
   body .nav .lowerNav {
     top: 11.9444444444rem;
-    bottom: unset; } }
+    bottom: unset; }
+
+  body, html {
+    min-height: 33.3333333333rem; } }
 /* ------- Tablet 991,767,479 ------- */
 @media screen and (min-width: 992px) and (-webkit-min-device-pixel-ratio: 1) {
   .fa-bars, .mobileNav {

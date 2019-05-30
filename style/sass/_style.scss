@@ -221,7 +221,12 @@ body {
                     top: pxToRem(215);
                     bottom: unset;
                 }
-            }   
+            }
+        }
+        
+        //Only allow the height to shrink to this amount before scrolling
+        body, html {
+            min-height: pxToRem(600);
         }
 }
 
