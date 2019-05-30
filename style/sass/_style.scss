@@ -198,6 +198,8 @@ body {
 }
 
 /* ------- Non-Retina Screens ------- */
+
+//Large displays 1920 wide
 @media screen
     and (min-width: 1920px)
     and (-webkit-min-device-pixel-ratio: 1) {
@@ -206,24 +208,35 @@ body {
         }
 }
 
-@media screen
-    and (min-width: 992px)
-    and (-webkit-min-device-pixel-ratio: 1) {
-        .fa-bars, .mobileNav-bottom {
-            display: none;
-        }
-}
-
 //Height adjustment for nav bar
 @media screen
-    and (min-height: 750px)
+    and (max-height: 750px)
     and (-webkit-min-device-pixel-ratio: 1) {
-        body,html {
-            min-height: 750px;
+        body {
+            .nav {
+                .upperNav {
+                    top: 0;
+                }
+                .lowerNav {
+                    top: pxToRem(215);
+                    bottom: unset;
+                }
+            }   
         }
 }
 
 /* ------- Tablet 991,767,479 ------- */
+
+//Exit tablet/mobile hide mobile navigation
+@media screen
+    and (min-width: 992px)
+    and (-webkit-min-device-pixel-ratio: 1) {
+        .fa-bars, .mobileNav {
+            display: none;
+        }
+}
+
+//Tablet/mobile styling 991 width
 @media screen
     and (max-width: 991px)
     and (-webkit-min-device-pixel-ratio: 1) {
@@ -289,17 +302,4 @@ body {
         0% {bottom: 0;}
         100% {bottom: pxToRem(-55); visibility: hidden;}
     }
-}
-
-
-
-//Leaving Mobile
-@media screen
-    and (min-width: 991px)
-    and (-webkit-min-device-pixel-ratio: 1) {
- 
-        //Hide mobile navigation
-        .mobileNav {
-            display: none;
-        }
 }

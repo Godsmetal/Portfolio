@@ -4354,13 +4354,16 @@ body {
 @media screen and (min-width: 1920px) and (-webkit-min-device-pixel-ratio: 1) {
   body, html {
     font-size: 18px; } }
-@media screen and (min-width: 992px) and (-webkit-min-device-pixel-ratio: 1) {
-  .fa-bars, .mobileNav-bottom {
-    display: none; } }
-@media screen and (min-height: 750px) and (-webkit-min-device-pixel-ratio: 1) {
-  body, html {
-    min-height: 750px; } }
+@media screen and (max-height: 750px) and (-webkit-min-device-pixel-ratio: 1) {
+  body .nav .upperNav {
+    top: 0; }
+  body .nav .lowerNav {
+    top: 11.9444444444rem;
+    bottom: unset; } }
 /* ------- Tablet 991,767,479 ------- */
+@media screen and (min-width: 992px) and (-webkit-min-device-pixel-ratio: 1) {
+  .fa-bars, .mobileNav {
+    display: none; } }
 @media screen and (max-width: 991px) and (-webkit-min-device-pixel-ratio: 1) {
   body, html {
     overflow-y: hidden; }
@@ -4413,9 +4416,6 @@ body {
     100% {
       bottom: -3.0555555556rem;
       visibility: hidden; } } }
-@media screen and (min-width: 991px) and (-webkit-min-device-pixel-ratio: 1) {
-  .mobileNav {
-    display: none; } }
 #projectsPage {
   overflow-x: hidden; }
   #projectsPage .overlay {
