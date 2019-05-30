@@ -29,8 +29,8 @@
                 <div class='item'>
                     
                     <div class='image-container'>
-                        <img class='laptop' src='../assets/laptop-ninja.png'>
-                        <img class='phone' src='../assets/phone-ninja.png'>
+                        <img class='laptop' src='assets/laptop-ninja.png'>
+                        <img class='phone' src='assets/phone-ninja.png'>
                     </div>
                     
                     <div class='info-container'>
@@ -55,8 +55,8 @@
                 <div class='item'>
                     
                     <div class='image-container'>
-                        <img class='laptop' src='../assets/laptop-shark.png'>
-                        <img class='phone' src='../assets/phone-shark.png'>
+                        <img class='laptop' src='assets/laptop-shark.png'>
+                        <img class='phone' src='assets/phone-shark.png'>
                     </div>
                     
                     <div class='info-container'>
@@ -81,8 +81,8 @@
                 <div class='item'>
                     
                     <div class='image-container'>
-                        <img class='laptop' src='../assets/laptop-rrcc.png'>
-                        <img class='phone' src='../assets/phone-rrcc.png'>
+                        <img class='laptop' src='assets/laptop-rrcc.png'>
+                        <img class='phone' src='assets/phone-rrcc.png'>
                     </div>
                     
                     <div class='info-container'>
@@ -109,8 +109,8 @@
                 <div class='item'>
                     
                     <div class='image-container'>
-                        <img class='laptop' src='../assets/laptop-cptc.png'>
-                        <img class='phone' src='../assets/phone-cptc.png'>
+                        <img class='laptop' src='assets/laptop-cptc.png'>
+                        <img class='phone' src='assets/phone-cptc.png'>
                     </div>
                     
                     <div class='info-container'>

@@ -1,7 +1,7 @@
 //On document load
 $(function() {
 
-    /* -------- Navigation -------- */
+    /* -------- Desktop navigation -------- */
     
     //activate the current page on the navigation panel
     //current path
@@ -23,18 +23,15 @@ $(function() {
         $(this).toggleClass('active');
         $('.mobileNav').toggleClass('active');
         
-        //Activate the currently loaded page icon
-        if($('.mobileNav').hasClass('active')) {
-            $('.mobileNav').find('a').each(function() {
-                console.log($(this));
-                
-               //current link
-                var $this = $(this);
-                if($this.attr('href').indexOf(current) !== -1) {
-                    $this.children(':first').toggleClass('active');
-                }
-            });
-        }
+        //Iterate through link tags
+        $('.mobileNav').find('a').each(function() {
+           //current link
+            var $this = $(this);
+            if($this.attr('href').indexOf(current) !== -1) {
+                //Add active tag to icon
+                $this.children(':first').addClass('active');
+            }
+        });
     });
         
     /* -------- Owl Carousel -------- */

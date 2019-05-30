@@ -4449,7 +4449,8 @@ body {
   #projectsPage .description {
     font-size: 1em;
     line-height: 2em;
-    list-style-type: none; }
+    list-style-type: none;
+    color: #FFFFFF; }
     #projectsPage .description li:before {
       content: "-";
       /* en dash */
@@ -4459,7 +4460,8 @@ body {
     font-style: italic;
     font-size: 0.8888888889em;
     text-align: center;
-    margin-top: 2.2222222222rem; }
+    margin-top: 2.2222222222rem;
+    color: #FFFFFF; }
   #projectsPage .image-container {
     display: inline-block;
     margin-right: 5.2777777778rem; }

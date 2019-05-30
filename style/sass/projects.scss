@@ -58,7 +58,7 @@
         font-size: pxToEm(18);
         line-height: pxToEm(36);
         list-style-type: none;
-        
+        color: $defaultFontColor;
         
         //Dash in front of list elements
         li:before {
@@ -74,6 +74,7 @@
         font-size: pxToEm(16);
         text-align: center;
         margin-top: pxToRem(40);
+        color: $defaultFontColor;
     }
     
     //container for laptop/phone images
