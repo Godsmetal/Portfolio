@@ -4390,7 +4390,8 @@ body {
       height: 3.0555555556rem;
       background-color: #181818;
       position: absolute;
-      transition-duration: 300ms; }
+      transition-duration: 300ms;
+      z-index: 1; }
       body .mobileNav ul, html .mobileNav ul {
         list-style: none;
         display: flex;
@@ -4446,11 +4447,18 @@ body {
   #aboutPage h2 a {
     color: #DDA454;
     text-decoration: none;
-    display: inline-block; }
+    display: inline-block;
+    transition: 2s ease-in;
+    position: relative; }
   #aboutPage h2 a:after {
     content: '';
-    height: 1px;
-    background: #DDA454;
-    display: block; }
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    border-bottom: 2px solid #DDA454;
+    transition: 0.4s; }
+  #aboutPage h2 a:hover:after {
+    width: 100%; }
 
 /*# sourceMappingURL=about.css.map */

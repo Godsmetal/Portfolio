@@ -4390,7 +4390,8 @@ body {
       height: 3.0555555556rem;
       background-color: #181818;
       position: absolute;
-      transition-duration: 300ms; }
+      transition-duration: 300ms;
+      z-index: 1; }
       body .mobileNav ul, html .mobileNav ul {
         list-style: none;
         display: flex;

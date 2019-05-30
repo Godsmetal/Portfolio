@@ -276,6 +276,7 @@ body {
                 background-color: $defaultNav;
                 position: absolute;
                 transition-duration: 300ms;
+                z-index: 1;
                 
                 ul {
                     list-style: none;
