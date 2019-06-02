@@ -19,6 +19,7 @@
             font-size: pxToEm(52);
             margin-top: pxToRem(200);
             margin-left: pxToRem(80);
+            width: pxToRem(585);
         }
         
         //Subtitle
@@ -37,4 +38,29 @@
             margin-left: pxToRem(80);
         }
     }
+}
+
+//Responsiveness
+@include mobile {
+    
+    #landingPage {
+       .container {
+            
+            h1 {
+                font-size: pxToEm(45);
+                width: pxToRem(360);
+            }
+           
+           h2 {
+               margin-top: pxToRem(550);
+           }
+            
+            button {
+                bottom: pxToRem(170);
+                margin: auto !important;
+                left: 0;
+                right: 0;
+            }
+        } 
+    }   
 }

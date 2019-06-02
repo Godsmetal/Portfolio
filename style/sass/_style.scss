@@ -26,12 +26,29 @@ $offwhite: #E6E6E6;
 $white: #FFFFFF;
 $gold: #DDA454;
 
+//Media Queries
+$desktop-width: 1024px;
+$mobile-width: 480px;
+
+@mixin tablet {
+    @media (min-width: #{$mobile-width}+1px) and (max-width: #{$desktop-width}-1px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media screen and (max-width: #{$mobile-width}) {
+        @content;
+    }
+}
+
 //Mixin that is used to update the current font-size of page for responsiveness
 @mixin fontSize($px) {
     font-size: $px+px; //16 + px = 16px
     $basePx: $px !global; //!global makes it global
 }
 
+//Mixin to vertical align elements
 @mixin vertical-align($position: relative) {
     position: $position;
     top: 50%;
