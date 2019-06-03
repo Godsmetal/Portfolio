@@ -41,6 +41,29 @@
 }
 
 //Responsiveness
+@include tablet {
+    #landingPage {
+        .container {
+            h1 {
+                font-size: pxToEm(45);
+                width: pxToRem(360);
+            }
+            
+            h2 {
+               margin-top: pxToRem(550);
+               font-size: pxToEm(23);
+           }
+            
+            button {
+                bottom: pxToRem(170);
+                margin: auto !important;
+                left: 0;
+                right: 0;
+            }
+        }
+    }
+}
+
 @include mobile {
     
     #landingPage {
@@ -53,6 +76,7 @@
            
            h2 {
                margin-top: pxToRem(550);
+               font-size: pxToEm(23);
            }
             
             button {

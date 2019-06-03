@@ -57,3 +57,51 @@
         }
     }
 }
+
+@include tablet {
+    
+    #aboutPage {
+        .overlay {
+            background-image: url(../../assets/about-background-mobile.jpg);
+            transform: none;
+        }
+        
+        h1 {
+            font-size: pxToEm(45);
+            margin-left: pxToRem(45);
+            margin-top: pxToRem(140);
+        }
+        
+        h2 {
+            font-size: pxToEm(16);
+            line-height: pxToEm(32);
+            width: pxToRem(400);
+            margin-left: pxToRem(45);
+            margin-top: pxToRem(250);
+        }
+    }
+}
+
+@include mobile {
+    
+    #aboutPage {
+        .overlay {
+            background-image: url(../../assets/about-background-mobile.jpg);
+            transform: none;
+        }
+        
+        h1 {
+            font-size: pxToEm(45);
+            margin-left: pxToRem(45);
+            margin-top: pxToRem(140);
+        }
+        
+        h2 {
+            font-size: pxToEm(16);
+            line-height: pxToEm(32);
+            width: pxToRem(400);
+            margin-left: pxToRem(45);
+            margin-top: pxToRem(250);
+        }
+    }
+}

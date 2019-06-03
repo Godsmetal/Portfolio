@@ -4461,4 +4461,33 @@ body {
   #aboutPage h2 a:hover:after {
     width: 100%; }
 
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  #aboutPage .overlay {
+    background-image: url(../../assets/about-background-mobile.jpg);
+    transform: none; }
+  #aboutPage h1 {
+    font-size: 2.5em;
+    margin-left: 2.5rem;
+    margin-top: 7.7777777778rem; }
+  #aboutPage h2 {
+    font-size: 0.8888888889em;
+    line-height: 1.7777777778em;
+    width: 22.2222222222rem;
+    margin-left: 2.5rem;
+    margin-top: 13.8888888889rem; } }
+@media screen and (max-width: 480px) {
+  #aboutPage .overlay {
+    background-image: url(../../assets/about-background-mobile.jpg);
+    transform: none; }
+  #aboutPage h1 {
+    font-size: 2.5em;
+    margin-left: 2.5rem;
+    margin-top: 7.7777777778rem; }
+  #aboutPage h2 {
+    font-size: 0.8888888889em;
+    line-height: 1.7777777778em;
+    width: 22.2222222222rem;
+    margin-left: 2.5rem;
+    margin-top: 13.8888888889rem; } }
+
 /*# sourceMappingURL=about.css.map */
