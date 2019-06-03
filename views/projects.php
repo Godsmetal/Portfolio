@@ -28,14 +28,14 @@
                 <!-- Project One -->
                 <div class='item'>
                     
+                    <h1>Ninja Kitchen</h1>
+                    
                     <div class='image-container'>
                         <img class='laptop' src='assets/laptop-ninja.png'>
                         <img class='phone' src='assets/phone-ninja.png'>
                     </div>
                     
                     <div class='info-container'>
-                    
-                        <h1>Ninja Kitchen</h1>
 
                         <ul class='description'>
                             <li>Full scale front-end builds of desktop and mobile experiences for<br>predominant pages</li>
@@ -54,6 +54,8 @@
                 <!-- Project Two -->
                 <div class='item'>
                     
+                    <h1>Shark Clean</h1>
+                    
                     <div class='image-container'>
                         <img class='laptop' src='assets/laptop-shark.png'>
                         <img class='phone' src='assets/phone-shark.png'>
@@ -61,8 +63,6 @@
                     
                     <div class='info-container'>
                     
-                        <h1>Shark Clean</h1>
-
                         <ul class='description'>
                             <li>Full scale front-end builds of desktop and mobile experiences for<br>predominant pages</li>
                             <li>System integration tests between staging and production servers</li>
@@ -78,7 +78,9 @@
                 </div>
                 
                 <!-- Project Three -->
-                <div class='item'>
+                <div class='item tl'>
+                    
+                    <h1>Rochester Riverside <br> Convention Center</h1>
                     
                     <div class='image-container'>
                         <img class='laptop' src='assets/laptop-rrcc.png'>
@@ -87,8 +89,6 @@
                     
                     <div class='info-container'>
                     
-                        <h1>Rochester Riverside <br> Convention Center</h1>
-
                         <ul class='description'>
                             <li>Mobile application, designed as online bulletin board for employees</li>
                             <li>Project manager and sponsor liaison of team</li>
@@ -106,7 +106,9 @@
                 </div>
                 
                 <!-- Project Four -->
-                <div class='item'>
+                <div class='item tl'>
+                    
+                    <h1>Collegiate Pentesting <br>Competition</h1>
                     
                     <div class='image-container'>
                         <img class='laptop' src='assets/laptop-cptc.png'>
@@ -115,8 +117,6 @@
                     
                     <div class='info-container'>
                     
-                        <h1>Collegiate Pentesting <br>Competition</h1>
-
                         <ul class='description'>
                             <li>Contributed to design, developmental, and implementation processes</li>
                             <li>Responsive website for desktop, tablet, and mobile devices</li>

@@ -4,7 +4,7 @@
     
     //Hide carousel overflow
     overflow-x: hidden;
-    
+      
     .overlay {
         background-image: url(../../assets/projects-background.jpeg);
         background-position: center 10%;
@@ -18,18 +18,26 @@
         
         //individual project
         .item {
-            display: block;
-            width: 100%;
-            height: auto;
-            padding: 0 pxToRem(70);
-            margin-top: pxToRem(180);
-            display: flex;
-            align-items: center;
+            //display: flex;
+            //align-items: center;
+            //justify-content: center;
+            text-align: center;
+            
+            &.tl {
+                //padding-top: pxToRem(120);
+            }
+        }
+        
+        .owl-stage-outer {
+            @include vertical-align();
         }
         
         .owl-dots {
-            padding: 0 pxToRem(70);
-            margin-top: pxToRem(100);
+            position: absolute;
+            bottom: pxToRem(100);
+            left: 0;
+            right: 0;
+            margin: 0 auto;
         }
         
         //navigation buttons
@@ -47,8 +55,7 @@
     h1 {
         color: $gold;
         font-size: pxToEm(52);
-        text-align: center;
-        margin-bottom: pxToRem(42);
+        padding-left: pxToRem(630);
         margin-top: 0;
     }
     
@@ -59,6 +66,7 @@
         line-height: pxToEm(36);
         list-style-type: none;
         color: $defaultFontColor;
+        text-align: left;
         
         //Dash in front of list elements
         li:before {
@@ -81,6 +89,12 @@
     .image-container {
         display: inline-block;
         margin-right: pxToRem(95);
+        vertical-align: middle;
+    }
+    
+    .info-container {
+        display: inline-block;
+        vertical-align: middle;
     }
     
     //laptop image
@@ -95,6 +109,29 @@
         display: inline-block;
         width: pxToRem(120);
     }
+}
+
+@include tablet-large {
     
-    
+    #projectsPage {
+        
+        .info-container {
+            
+            padding-top: pxToRem(60);
+            
+            h1 {
+                margin-bottom: pxToRem(270);   
+            }
+            
+            .description {
+                padding-top: pxToRem(70);
+            }
+            
+        }
+        
+        .image-container {
+            position: absolute;
+            top: pxToRem(220);
+        }
+    }
 }

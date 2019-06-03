@@ -99,6 +99,7 @@ body {
         display: inline-block;
         position: relative;
         overflow-y: hidden;
+        z-index: 5;
         
         //Links
         a {
@@ -256,20 +257,18 @@ body {
         }
 }
 
-/* ------- Tablet 991,767,479 ------- */
-
 //Exit tablet/mobile hide mobile navigation
 @media screen
-    and (min-width: 992px)
+    and (min-width: 1024px)
     and (-webkit-min-device-pixel-ratio: 1) {
         .fa-bars, .mobileNav {
             display: none;
         }
 }
 
-//Tablet/mobile styling 991 width
+//Tablet/mobile styling 1023 width
 @media screen
-    and (max-width: 991px)
+    and (max-width: 1023px)
     and (-webkit-min-device-pixel-ratio: 1) {
         
         body,html {
@@ -302,7 +301,7 @@ body {
                 background-color: $defaultNav;
                 position: absolute;
                 transition-duration: 300ms;
-                z-index: 1;
+                z-index: 5;
                 
                 ul {
                     list-style: none;

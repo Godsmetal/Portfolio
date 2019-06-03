@@ -4287,7 +4287,8 @@ body {
     text-align: center;
     display: inline-block;
     position: relative;
-    overflow-y: hidden; }
+    overflow-y: hidden;
+    z-index: 5; }
     body .nav a {
       display: block;
       margin-top: 2.5rem;
@@ -4363,11 +4364,10 @@ body {
 
   body, html {
     min-height: 33.3333333333rem; } }
-/* ------- Tablet 991,767,479 ------- */
-@media screen and (min-width: 992px) and (-webkit-min-device-pixel-ratio: 1) {
+@media screen and (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
   .fa-bars, .mobileNav {
     display: none; } }
-@media screen and (max-width: 991px) and (-webkit-min-device-pixel-ratio: 1) {
+@media screen and (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1) {
   body, html {
     overflow-y: hidden; }
     body .nav, html .nav {
@@ -4391,7 +4391,7 @@ body {
       background-color: #181818;
       position: absolute;
       transition-duration: 300ms;
-      z-index: 1; }
+      z-index: 5; }
       body .mobileNav ul, html .mobileNav ul {
         list-style: none;
         display: flex;
