@@ -90,14 +90,12 @@
                     <div class='info-container'>
                     
                         <ul class='description'>
-                            <li>Mobile application, designed as online bulletin board for employees</li>
                             <li>Project manager and sponsor liaison of team</li>
-                            <li>Authentication and authorization of user logins</li>
                             <li>Application developed using Model/View/Controller system architecture</li>
                             <li>Full-scale mobile mockups created in Adobe Illustrator</li>
                             <li>Administrative tools built for application maintainability</li>
                             <li>Gaant charts used for scheduling as well as weekly scrum</li>
-                            <li>Programmed using PHP, HTML/CSS, Sass, JavaScript, phpMyAdmin,<br> and MySQLi</li>
+                            <li>Programmed using PHP, Sass, JavaScript, phpMyAdmin and MySQLi</li>
                         </ul>
 
                         <p>Confidential - Therefore code will not be distributed</p>
