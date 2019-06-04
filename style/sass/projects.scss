@@ -15,21 +15,13 @@
     .owl-carousel{
         position: absolute;
         height: 100%;
-        
-        //individual project
-        .item {
-            text-align: center;
-            padding-right: pxToRem(55);
-            
-            &.tl {
-                //padding-bottom: pxToRem(40);
-            }
-        }
-        
+
+        //Container for owl carousel item
         .owl-stage-outer {
             @include vertical-align();
         }
         
+        //Container for owl navigation
         .owl-dots {
             position: absolute;
             bottom: pxToRem(100);
@@ -48,71 +40,77 @@
                 }
             }
         }
-    }
-    
-    //project header
-    h1 {
-        color: $gold;
-        font-size: pxToEm(52);
-        padding-left: pxToRem(630);
-        margin-top: 0;
-    }
-    
-    
-    //project description
-    .description {
-        font-size: pxToEm(18);
-        line-height: pxToEm(36);
-        list-style-type: none;
-        color: $defaultFontColor;
-        text-align: left;
         
-        //Dash in front of list elements
-        li:before {
-            content: "-"; /* en dash */
-            position: absolute;
-            margin-left: -1em;
-        }
-        
-        li {
-            span {
-                display: block;
+        //individual project
+        .item {
+            text-align: center;
+            padding-right: pxToRem(55);
+            
+            //project header
+            h1 {
+                color: $gold;
+                font-size: pxToEm(52);
+                padding-left: pxToRem(630);
+                margin-top: 0;
+            }
+            
+            //container for laptop/phone images
+            .image-container {
+                display: inline-block;
+                margin-right: pxToRem(95);
+                vertical-align: middle;
+
+                //laptop image
+                .laptop {
+                    display: inline-block;
+                    margin-right: pxToRem(40);
+                    width: pxToRem(350);
+                }
+
+                //phone image
+                .phone {
+                    display: inline-block;
+                    width: pxToRem(120);
+                }
+            }
+
+            //text descriptions
+            .info-container {
+                display: inline-block;
+                vertical-align: middle;
+                
+                //project description
+                .description {
+                    font-size: pxToEm(18);
+                    line-height: pxToEm(36);
+                    list-style-type: none;
+                    color: $defaultFontColor;
+                    text-align: left;
+
+                    //Dash in front of list elements
+                    li:before {
+                        content: "-"; /* en dash */
+                        position: absolute;
+                        margin-left: -1em;
+                    }
+
+                    li {
+                        span {
+                            display: block;
+                        }
+                    }
+                }
+                
+                //project disclaimer
+                p {
+                    font-style: italic;
+                    font-size: pxToEm(16);
+                    text-align: center;
+                    margin-top: pxToRem(40);
+                    color: $defaultFontColor;
+                }
             }
         }
-    }
-    
-    //project disclaimer
-    p {
-        font-style: italic;
-        font-size: pxToEm(16);
-        text-align: center;
-        margin-top: pxToRem(40);
-        color: $defaultFontColor;
-    }
-    
-    //container for laptop/phone images
-    .image-container {
-        display: inline-block;
-        margin-right: pxToRem(95);
-        vertical-align: middle;
-    }
-    
-    .info-container {
-        display: inline-block;
-        vertical-align: middle;
-    }
-    
-    //laptop image
-    .laptop {
-        display: inline-block;
-        margin-right: pxToRem(40);
-        width: pxToRem(350);
-    }
-    
-    //phone image
-    .phone {
-        display: inline-block;
-        width: pxToRem(120);
     }
 }
 

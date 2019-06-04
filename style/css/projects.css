@@ -4429,9 +4429,6 @@ body {
   #projectsPage .owl-carousel {
     position: absolute;
     height: 100%; }
-    #projectsPage .owl-carousel .item {
-      text-align: center;
-      padding-right: 3.0555555556rem; }
     #projectsPage .owl-carousel .owl-stage-outer {
       position: relative;
       top: 50%;
@@ -4449,44 +4446,47 @@ body {
       outline-style: none; }
       #projectsPage .owl-carousel .owl-dot.active span {
         background: #DDA454; }
-  #projectsPage h1 {
-    color: #DDA454;
-    font-size: 2.8888888889em;
-    padding-left: 35rem;
-    margin-top: 0; }
-  #projectsPage .description {
-    font-size: 1em;
-    line-height: 2em;
-    list-style-type: none;
-    color: #FFFFFF;
-    text-align: left; }
-    #projectsPage .description li:before {
-      content: "-";
-      /* en dash */
-      position: absolute;
-      margin-left: -1em; }
-    #projectsPage .description li span {
-      display: block; }
-  #projectsPage p {
-    font-style: italic;
-    font-size: 0.8888888889em;
-    text-align: center;
-    margin-top: 2.2222222222rem;
-    color: #FFFFFF; }
-  #projectsPage .image-container {
-    display: inline-block;
-    margin-right: 5.2777777778rem;
-    vertical-align: middle; }
-  #projectsPage .info-container {
-    display: inline-block;
-    vertical-align: middle; }
-  #projectsPage .laptop {
-    display: inline-block;
-    margin-right: 2.2222222222rem;
-    width: 19.4444444444rem; }
-  #projectsPage .phone {
-    display: inline-block;
-    width: 6.6666666667rem; }
+    #projectsPage .owl-carousel .item {
+      text-align: center;
+      padding-right: 3.0555555556rem; }
+      #projectsPage .owl-carousel .item h1 {
+        color: #DDA454;
+        font-size: 2.8888888889em;
+        padding-left: 35rem;
+        margin-top: 0; }
+      #projectsPage .owl-carousel .item .image-container {
+        display: inline-block;
+        margin-right: 5.2777777778rem;
+        vertical-align: middle; }
+        #projectsPage .owl-carousel .item .image-container .laptop {
+          display: inline-block;
+          margin-right: 2.2222222222rem;
+          width: 19.4444444444rem; }
+        #projectsPage .owl-carousel .item .image-container .phone {
+          display: inline-block;
+          width: 6.6666666667rem; }
+      #projectsPage .owl-carousel .item .info-container {
+        display: inline-block;
+        vertical-align: middle; }
+        #projectsPage .owl-carousel .item .info-container .description {
+          font-size: 1em;
+          line-height: 2em;
+          list-style-type: none;
+          color: #FFFFFF;
+          text-align: left; }
+          #projectsPage .owl-carousel .item .info-container .description li:before {
+            content: "-";
+            /* en dash */
+            position: absolute;
+            margin-left: -1em; }
+          #projectsPage .owl-carousel .item .info-container .description li span {
+            display: block; }
+        #projectsPage .owl-carousel .item .info-container p {
+          font-style: italic;
+          font-size: 0.8888888889em;
+          text-align: center;
+          margin-top: 2.2222222222rem;
+          color: #FFFFFF; }
 
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
   #projectsPage .item h1 {

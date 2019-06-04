@@ -78,7 +78,7 @@
                 </div>
                 
                 <!-- Project Three -->
-                <div class='item tl'>
+                <div class='item'>
                     
                     <h1>Rochester Riverside <br> Convention Center</h1>
                     
@@ -104,7 +104,7 @@
                 </div>
                 
                 <!-- Project Four -->
-                <div class='item tl'>
+                <div class='item'>
                     
                     <h1>Collegiate Pentesting <br>Competition</h1>
                     
