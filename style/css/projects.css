@@ -4465,6 +4465,8 @@ body {
       /* en dash */
       position: absolute;
       margin-left: -1em; }
+    #projectsPage .description li span {
+      display: block; }
   #projectsPage p {
     font-style: italic;
     font-size: 0.8888888889em;
@@ -4486,7 +4488,17 @@ body {
     display: inline-block;
     width: 6.6666666667rem; }
 
-@media screen and (min-width: 480px) and (max-width: 1024px) {
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  #projectsPage .item h1 {
+    padding-left: 29.4444444444rem; }
+  #projectsPage .item .image-container {
+    margin-right: 0; }
+    #projectsPage .item .image-container .laptop {
+      width: 16.6666666667rem; }
+    #projectsPage .item .image-container .phone {
+      height: 10.5555555556rem;
+      width: auto; } }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   #projectsPage .owl-carousel .owl-stage-outer {
     top: 0;
     -webkit-transform: none;
@@ -4517,6 +4529,8 @@ body {
       #projectsPage .owl-carousel .item .info-container .description {
         font-size: 0.8333333333em;
         margin-top: 0.8333333333rem; }
+        #projectsPage .owl-carousel .item .info-container .description li span {
+          display: none; }
   #projectsPage .owl-carousel .owl-dots {
     bottom: 3.8888888889rem;
     padding: 0; }
@@ -4552,6 +4566,8 @@ body {
       width: 29.4444444444rem; }
       #projectsPage .owl-carousel .item .info-container .description {
         font-size: 0.8333333333em; }
+        #projectsPage .owl-carousel .item .info-container .description li span {
+          display: none; }
   #projectsPage .owl-carousel .owl-dots {
     bottom: 3.8888888889rem;
     padding: 0; }
@@ -4586,6 +4602,8 @@ body {
       width: 100%; }
       #projectsPage .owl-carousel .item .info-container .description {
         font-size: 0.8333333333em; }
+        #projectsPage .owl-carousel .item .info-container .description li span {
+          display: none; }
   #projectsPage .owl-carousel .owl-dots {
     bottom: 3.8888888889rem;
     padding: 0; }

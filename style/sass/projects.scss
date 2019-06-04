@@ -73,6 +73,12 @@
             position: absolute;
             margin-left: -1em;
         }
+        
+        li {
+            span {
+                display: block;
+            }
+        }
     }
     
     //project disclaimer
@@ -111,6 +117,31 @@
 }
 
 //Responsiveness
+@include desktop-small {
+    #projectsPage {
+        
+        .item {
+            
+            h1 {
+                padding-left: pxToRem(530);
+            }
+            
+            .image-container {
+                margin-right: 0;
+                
+                .laptop {
+                    width: pxToRem(300);
+                }
+                
+                .phone {
+                    height: pxToRem(190);
+                    width: auto;
+                }
+            }
+        }
+    }
+}
+
 @include tablet-large {
     #projectsPage {
         
@@ -158,6 +189,12 @@
                     .description {
                         font-size: pxToEm(15);
                         margin-top: pxToRem(15);
+                        
+                        li {
+                            span {
+                                display: none;
+                            }
+                        }
                     }
                 }
             }
@@ -220,6 +257,12 @@
                     
                     .description {
                         font-size: pxToEm(15);
+                        
+                        li {
+                            span {
+                                display: none;
+                            }
+                        }
                     }
                 }
             }
@@ -281,6 +324,12 @@
                     
                     .description {
                         font-size: pxToEm(15);
+                        
+                        li {
+                            span {
+                                display: none;
+                            }
+                        }
                     }
                 }
             }

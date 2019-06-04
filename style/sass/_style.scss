@@ -26,14 +26,23 @@ $offwhite: #E6E6E6;
 $white: #FFFFFF;
 $gold: #DDA454;
 
-//Media Queries <1024,767
+//Media Queries
 $desktop-width: 1024px;
 $tablet-width: 767px;
 $mobile-width: 480px;
+$tablet-large: "(min-width: 768px) and (max-width: 1023px)";
+$desktop-small: "(min-width: 1024px) and (max-width: 1280px)";
+
+//1024 - 1280
+@mixin desktop-small {
+    @media screen and #{$desktop-small} {
+        @content;
+    }
+}
 
 //In-between desktop and tablet
 @mixin tablet-large {
-    @media screen and (min-width: #{$mobile-width}) and (max-width: #{$desktop-width}) {
+    @media screen and #{$tablet-large} {
         @content;
     }
 }

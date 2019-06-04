@@ -38,12 +38,12 @@
                     <div class='info-container'>
 
                         <ul class='description'>
-                            <li>Full scale front-end builds of desktop and mobile experiences for predominant pages</li>
+                            <li>Full scale front-end builds of desktop and mobile experiences for<span></span> predominant pages</li>
                             <li>System integration tests between staging and production servers</li>
                             <li>Data entry of various components</li>
                             <li>Monthly traffic in the millions</li>
                             <li>Award winning e-commerce website</li>
-                            <li>Programmed using JavaScript, jQuery, PHP, Twig, HTML5/CSS3, Sass, Cornerstone, and Selenium</li>
+                            <li>Programmed using JavaScript, jQuery, PHP, Twig, HTML5/CSS3,<span></span> Sass, Cornerstone, and Selenium</li>
                         </ul>
 
                         <p>Confidential - Therefore code will not be distributed</p>
@@ -64,12 +64,12 @@
                     <div class='info-container'>
                     
                         <ul class='description'>
-                            <li>Full scale front-end builds of desktop and mobile experiences for predominant pages</li>
+                            <li>Full scale front-end builds of desktop and mobile experiences for<span></span> predominant pages</li>
                             <li>System integration tests between staging and production servers</li>
                             <li>Data entry of various components</li>
                             <li>Monthly traffic in the millions</li>
                             <li>Award winning e-commerce website</li>
-                            <li>Programmed using JavaScript, jQuery, PHP, Twig, HTML5/CSS3, Sass, Cornerstone, and Selenium</li>
+                            <li>Programmed using JavaScript, jQuery, PHP, Twig, HTML5/CSS3,<span></span> Sass, Cornerstone, and Selenium</li>
                         </ul>
 
                         <p>Confidential - Therefore code will not be distributed</p>
