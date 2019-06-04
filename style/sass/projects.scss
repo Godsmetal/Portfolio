@@ -110,32 +110,133 @@
     }
 }
 
+//Responsiveness
 @include tablet-large {
-    
     #projectsPage {
         
-        .info-container {
+        .owl-carousel {
             
-            padding-top: pxToRem(60);
-            
-            h1 {
-                margin-bottom: pxToRem(270);   
+            .owl-stage-outer {
+                top: 0;
+                -webkit-transform: none;
+                transform: none;
             }
             
-            .description {
-                padding-top: pxToRem(70);
+            .item {
+                text-align: center;
+                padding: 0;
+                
+                h1 {
+                    font-size: pxToEm(40);
+                    text-align: center;
+                    margin-top: pxToRem(140);
+                    margin-bottom: pxToRem(50);
+                    padding: 0;
+                }
+                
+                .image-container {
+                    margin-right: unset;
+                    vertical-align: unset;
+                    width: 100%;
+                    text-align: center;
+                    
+                    .laptop {
+                        margin-right: pxToRem(40);
+                        width: pxToRem(325);
+                    }
+
+                    .phone {
+                        height: pxToRem(225);
+                        width: auto;
+                    }
+                }
+                
+                .info-container {
+                    margin: 0 auto;
+                    width: pxToRem(660);
+                    
+                    .description {
+                        font-size: pxToEm(15);
+                        margin-top: pxToRem(15);
+                    }
+                }
             }
             
-        }
-        
-        .image-container {
-            position: absolute;
-            top: pxToRem(220);
+            .owl-dots {
+                bottom: pxToRem(70);
+                padding: 0;
+                
+                button {
+                    margin: 0 pxToRem(10);
+                }
+            }
         }
     }
 }
 
-@include mobile {
+@include tablet {
+    #projectsPage {
+        
+        .owl-carousel {
+            
+            .owl-stage-outer {
+                top: 0;
+                -webkit-transform: none;
+                transform: none;
+            }
+            
+            .item {
+                text-align: center;
+                padding: 0;
+                
+                h1 {
+                    font-size: pxToEm(40);
+                    text-align: center;
+                    margin-top: pxToRem(140);
+                    margin-bottom: pxToRem(50);
+                    padding: 0;
+                }
+                
+                .image-container {
+                    margin-right: unset;
+                    vertical-align: unset;
+                    width: 100%;
+                    text-align: center;
+                    
+                    .laptop {
+                        margin-right: 0;
+                        width: pxToRem(275);
+                    }
+
+                    .phone {
+                        height: pxToRem(175);
+                        width: auto;
+                    }
+                }
+                
+                .info-container {
+                    margin: 0 auto;
+                    width: pxToRem(530);
+                    
+                    .description {
+                        font-size: pxToEm(15);
+                    }
+                }
+            }
+            
+            .owl-dots {
+                bottom: pxToRem(70);
+                padding: 0;
+                
+                button {
+                    margin: 0 pxToRem(10);
+                }
+            }
+        }
+    }
+}
+
+@include mobile{
     #projectsPage {
         
         .owl-carousel {
@@ -186,6 +287,7 @@
             
             .owl-dots {
                 bottom: pxToRem(70);
+                padding: 0;
                 
                 button {
                     margin: 0 pxToRem(10);
