@@ -108,3 +108,49 @@
         }
     }
 }
+
+@include mobile {
+    
+    #contactPage {
+        .container {
+                
+            h1 {
+                width: 100%;
+                text-align: center;
+                margin-top: pxToRem(100);
+                margin-left: 0;
+            }
+            
+            h2 {
+                width: auto;
+                padding: 0 pxToRem(40);
+                margin-left: 0;
+                margin-top: pxToRem(200);
+            }
+            
+            #contactForm {
+                padding: 0 pxToRem(40);
+                margin-left: 0;
+                margin-top: pxToRem(340);
+                text-align: center;
+                
+                input {
+                    width: 100%;
+                }
+                
+                input[name=email] {
+                    margin-top: pxToRem(15);
+                }
+                
+                textarea {
+                    height: pxToRem(200);
+                }
+                
+                button {
+                    float: none;
+                    margin-top: pxToRem(20);
+                }
+            }
+        }
+    }
+}
