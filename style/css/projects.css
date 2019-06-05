@@ -4428,20 +4428,12 @@ body {
     opacity: 0.25; }
   #projectsPage .owl-carousel {
     position: absolute;
-    height: 100%; }
-    #projectsPage .owl-carousel .owl-stage-outer {
-      position: relative;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%); }
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
     #projectsPage .owl-carousel .owl-dots {
-      position: absolute;
-      bottom: 5.5555555556rem;
-      left: 0;
-      right: 0;
-      margin: 0 auto;
-      padding-right: 3.0555555556rem; }
+      margin-top: 4.4444444444rem; }
     #projectsPage .owl-carousel .owl-dot {
       outline-style: none; }
       #projectsPage .owl-carousel .owl-dot.active span {
@@ -4489,27 +4481,23 @@ body {
           color: #FFFFFF; }
 
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
-  #projectsPage .item h1 {
+  #projectsPage .owl-carousel .item h1 {
     padding-left: 29.4444444444rem; }
-  #projectsPage .item .image-container {
+  #projectsPage .owl-carousel .item .image-container {
     margin-right: 0; }
-    #projectsPage .item .image-container .laptop {
+    #projectsPage .owl-carousel .item .image-container .laptop {
       width: 16.6666666667rem; }
-    #projectsPage .item .image-container .phone {
+    #projectsPage .owl-carousel .item .image-container .phone {
       height: 10.5555555556rem;
       width: auto; } }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  #projectsPage .owl-carousel .owl-stage-outer {
-    top: 0;
-    -webkit-transform: none;
-    transform: none; }
   #projectsPage .owl-carousel .item {
     text-align: center;
     padding: 0; }
     #projectsPage .owl-carousel .item h1 {
       font-size: 2.2222222222em;
       text-align: center;
-      margin-top: 7.7777777778rem;
+      margin-top: 4.4444444444rem;
       margin-bottom: 2.7777777778rem;
       padding: 0; }
     #projectsPage .owl-carousel .item .image-container {
@@ -4532,22 +4520,18 @@ body {
         #projectsPage .owl-carousel .item .info-container .description li span {
           display: none; }
   #projectsPage .owl-carousel .owl-dots {
-    bottom: 3.8888888889rem;
+    margin-top: 0.5555555556rem;
     padding: 0; }
     #projectsPage .owl-carousel .owl-dots button {
       margin: 0 0.5555555556rem; } }
 @media screen and (min-width: 480px) and (max-width: 767px) {
-  #projectsPage .owl-carousel .owl-stage-outer {
-    top: 0;
-    -webkit-transform: none;
-    transform: none; }
   #projectsPage .owl-carousel .item {
     text-align: center;
     padding: 0; }
     #projectsPage .owl-carousel .item h1 {
       font-size: 2.2222222222em;
       text-align: center;
-      margin-top: 7.7777777778rem;
+      margin-top: 4.4444444444rem;
       margin-bottom: 2.7777777778rem;
       padding: 0; }
     #projectsPage .owl-carousel .item .image-container {
@@ -4569,8 +4553,8 @@ body {
         #projectsPage .owl-carousel .item .info-container .description li span {
           display: none; }
   #projectsPage .owl-carousel .owl-dots {
-    bottom: 3.8888888889rem;
-    padding: 0; }
+    padding: 0;
+    margin-top: 1.1111111111rem; }
     #projectsPage .owl-carousel .owl-dots button {
       margin: 0 0.5555555556rem; } }
 @media screen and (max-width: 480px) {
@@ -4584,7 +4568,7 @@ body {
     #projectsPage .owl-carousel .item h1 {
       font-size: 2.2222222222em;
       text-align: center;
-      margin-top: 7.7777777778rem;
+      margin-top: 4.4444444444rem;
       margin-bottom: 2.7777777778rem;
       padding: 0; }
     #projectsPage .owl-carousel .item .image-container {
@@ -4605,7 +4589,7 @@ body {
         #projectsPage .owl-carousel .item .info-container .description li span {
           display: none; }
   #projectsPage .owl-carousel .owl-dots {
-    bottom: 3.8888888889rem;
+    margin-top: 1.1111111111rem;
     padding: 0; }
     #projectsPage .owl-carousel .owl-dots button {
       margin: 0 0.5555555556rem; } }
