@@ -1,6 +1,8 @@
 @import "style.scss";
 
 #contactPage {
+    overflow-x: hidden;
+    
     .overlay {
         background-image: url(../../assets/contact-background.jpeg);
         background-position: center 10%;
@@ -9,6 +11,9 @@
         -webkit-transform: scaleX(-1);
         transform: scaleX(-1);
         opacity: 0.25;
+        position: absolute;
+        top: 0;
+        width: 100%;
     }
     h1 {
         font-size: pxToEm(52);
@@ -30,7 +35,7 @@
     
     #contactForm {
         z-index: 1;
-        position: absolute;
+        width: pxToRem(530);
         margin-top: pxToRem(300);
         margin-left: pxToRem(80);
         
@@ -53,7 +58,7 @@
         }
         
         input[name=name] {
-            margin-right: pxToRem(13);
+            margin-right: pxToRem(18);
             width: pxToRem(250);
         }
         
@@ -109,6 +114,98 @@
     }
 }
 
+@include tablet-large {
+    
+    #contactPage {
+        .container {
+                
+            h1 {
+                width: 100%;
+                text-align: center;
+                margin-top: pxToRem(100);
+                margin-left: 0;
+            }
+            
+            h2 {
+                padding: 0 pxToRem(40);
+                margin: pxToRem(200) auto 0;
+                width: pxToRem(520);
+                position: relative;
+            }
+            
+            #contactForm {
+                padding: 0 pxToRem(40);
+                margin: pxToRem(40) auto 0;
+                text-align: center;
+                width: pxToRem(520);
+                
+                input {
+                    width: 100%;
+                    margin-top: pxToRem(15);
+                    margin-right: 0;
+                }
+                        
+                textarea {
+                    height: pxToRem(200);
+                }
+                
+                button {
+                    float: none;
+                    margin-top: pxToRem(20);
+                }
+            }
+        }
+    }
+}
+
+@include tablet {
+    
+    #contactPage {
+        .container {
+            
+            h1 {
+                width: 100%;
+                text-align: center;
+                margin-top: pxToRem(100);
+                margin-left: 0;
+            }
+            
+            h2 {
+                width: pxToRem(520);
+                padding: 0 pxToRem(40);
+                margin: pxToRem(200) auto 0;
+                position: relative;
+            }
+            
+            #contactForm {
+                width: auto;
+                padding: 0 pxToRem(40);
+                margin: pxToRem(40) auto 0;
+                text-align: center;
+                
+                input {
+                    width: 100%;
+                    margin-top: pxToRem(15);
+                    margin-right: 0;
+                }
+                        
+                textarea {
+                    height: pxToRem(200);
+                }
+                
+                button {
+                    float: none;
+                    margin-top: pxToRem(20);
+                }
+            }
+        }
+        
+        .overlay {
+            background-position: 18% 10%;
+        }
+    }
+}
+
 @include mobile {
     
     #contactPage {
@@ -124,24 +221,21 @@
             h2 {
                 width: auto;
                 padding: 0 pxToRem(40);
-                margin-left: 0;
-                margin-top: pxToRem(200);
+                margin: pxToRem(200) auto 0;
+                position: relative;
             }
             
             #contactForm {
                 padding: 0 pxToRem(40);
-                margin-left: 0;
-                margin-top: pxToRem(340);
+                margin: pxToRem(20) auto 0;
                 text-align: center;
+                width: auto;
                 
                 input {
                     width: 100%;
-                }
-                
-                input[name=email] {
                     margin-top: pxToRem(15);
                 }
-                
+                                
                 textarea {
                     height: pxToRem(200);
                 }
@@ -151,6 +245,10 @@
                     margin-top: pxToRem(20);
                 }
             }
+        }
+        
+        .overlay {
+            background-position: 18% 10%;
         }
     }
 }

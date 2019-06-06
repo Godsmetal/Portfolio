@@ -4420,87 +4420,144 @@ body {
     100% {
       bottom: -3.0555555556rem;
       visibility: hidden; } } }
-#contactPage .overlay {
-  background-image: url(../../assets/contact-background.jpeg);
-  background-position: center 10%;
-  -moz-transform: scaleX(-1);
-  -o-transform: scaleX(-1);
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-  opacity: 0.25; }
-#contactPage h1 {
-  font-size: 2.8888888889em;
-  color: #DDA454;
-  position: absolute;
-  margin-top: 6.3888888889rem;
-  margin-left: 4.4444444444rem; }
-#contactPage h2 {
-  font-size: 1em;
-  position: absolute;
-  margin-top: 10.5555555556rem;
-  margin-left: 4.4444444444rem;
-  width: 28.8888888889rem;
-  line-height: 1.4444444444rem;
-  font-weight: normal; }
-#contactPage #contactForm {
-  z-index: 1;
-  position: absolute;
-  margin-top: 16.6666666667rem;
-  margin-left: 4.4444444444rem; }
-  #contactPage #contactForm input:not(.submit) {
-    font-family: "Liberation Sans", sans-serif;
-    font-size: 1.1111111111em;
-    height: 3.0555555556rem;
-    border: none;
-    background-color: #37393B;
-    text-indent: 0.8333333333rem;
-    overflow: hidden;
-    text-overflow: ellipsis; }
-  #contactPage #contactForm input[placeholder], #contactPage #contactForm textarea {
-    font-family: "Liberation Sans", sans-serif;
-    font-size: 1.1111111111em;
-    color: #E6E6E6; }
-  #contactPage #contactForm input[name=name] {
-    margin-right: 0.7222222222rem;
-    width: 13.8888888889rem; }
-  #contactPage #contactForm input[name=email] {
-    width: 13.8888888889rem; }
-  #contactPage #contactForm input[name=subject] {
-    display: block;
-    width: 100%;
-    margin-top: 0.8333333333rem; }
-  #contactPage #contactForm textarea {
-    display: block;
-    resize: none;
-    border: none;
-    height: 12.7777777778rem;
-    width: 100%;
-    margin-top: 0.8333333333rem;
-    padding: 0.8333333333rem;
-    background-color: #37393B;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    box-sizing: border-box; }
-  #contactPage #contactForm input:focus, #contactPage #contactForm textarea:focus {
-    -webkit-transition: all 0.30s ease-in-out;
-    -moz-transition: all 0.30s ease-in-out;
-    -ms-transition: all 0.30s ease-in-out;
-    -o-transition: all 0.30s ease-in-out;
-    outline: none;
-    border: 1px solid #DDA454; }
-  #contactPage #contactForm .submit {
-    float: right;
+#contactPage {
+  overflow-x: hidden; }
+  #contactPage .overlay {
+    background-image: url(../../assets/contact-background.jpeg);
+    background-position: center 10%;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    opacity: 0.25;
+    position: absolute;
+    top: 0;
+    width: 100%; }
+  #contactPage h1 {
+    font-size: 2.8888888889em;
+    color: #DDA454;
+    position: absolute;
+    margin-top: 6.3888888889rem;
+    margin-left: 4.4444444444rem; }
+  #contactPage h2 {
     font-size: 1em;
-    margin-top: 0.8333333333rem; }
-  #contactPage #contactForm input:-webkit-autofill,
-  #contactPage #contactForm input:-webkit-autofill:hover,
-  #contactPage #contactForm input:-webkit-autofill:focus,
-  #contactPage #contactForm input:-webkit-autofill:active {
-    -webkit-box-shadow: 0 0 0.6666666667rem 0 rgba(0, 0, 0, 0.5) !important;
-    -webkit-text-fill-color: #E6E6E6 !important;
-    transition: background-color 5500s ease-in-out 0s;
-    caret-color: #E6E6E6; }
+    position: absolute;
+    margin-top: 10.5555555556rem;
+    margin-left: 4.4444444444rem;
+    width: 28.8888888889rem;
+    line-height: 1.4444444444rem;
+    font-weight: normal; }
+  #contactPage #contactForm {
+    z-index: 1;
+    width: 29.4444444444rem;
+    margin-top: 16.6666666667rem;
+    margin-left: 4.4444444444rem; }
+    #contactPage #contactForm input:not(.submit) {
+      font-family: "Liberation Sans", sans-serif;
+      font-size: 1.1111111111em;
+      height: 3.0555555556rem;
+      border: none;
+      background-color: #37393B;
+      text-indent: 0.8333333333rem;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+    #contactPage #contactForm input[placeholder], #contactPage #contactForm textarea {
+      font-family: "Liberation Sans", sans-serif;
+      font-size: 1.1111111111em;
+      color: #E6E6E6; }
+    #contactPage #contactForm input[name=name] {
+      margin-right: 1rem;
+      width: 13.8888888889rem; }
+    #contactPage #contactForm input[name=email] {
+      width: 13.8888888889rem; }
+    #contactPage #contactForm input[name=subject] {
+      display: block;
+      width: 100%;
+      margin-top: 0.8333333333rem; }
+    #contactPage #contactForm textarea {
+      display: block;
+      resize: none;
+      border: none;
+      height: 12.7777777778rem;
+      width: 100%;
+      margin-top: 0.8333333333rem;
+      padding: 0.8333333333rem;
+      background-color: #37393B;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      box-sizing: border-box; }
+    #contactPage #contactForm input:focus, #contactPage #contactForm textarea:focus {
+      -webkit-transition: all 0.30s ease-in-out;
+      -moz-transition: all 0.30s ease-in-out;
+      -ms-transition: all 0.30s ease-in-out;
+      -o-transition: all 0.30s ease-in-out;
+      outline: none;
+      border: 1px solid #DDA454; }
+    #contactPage #contactForm .submit {
+      float: right;
+      font-size: 1em;
+      margin-top: 0.8333333333rem; }
+    #contactPage #contactForm input:-webkit-autofill,
+    #contactPage #contactForm input:-webkit-autofill:hover,
+    #contactPage #contactForm input:-webkit-autofill:focus,
+    #contactPage #contactForm input:-webkit-autofill:active {
+      -webkit-box-shadow: 0 0 0.6666666667rem 0 rgba(0, 0, 0, 0.5) !important;
+      -webkit-text-fill-color: #E6E6E6 !important;
+      transition: background-color 5500s ease-in-out 0s;
+      caret-color: #E6E6E6; }
 
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #contactPage .container h1 {
+    width: 100%;
+    text-align: center;
+    margin-top: 5.5555555556rem;
+    margin-left: 0; }
+  #contactPage .container h2 {
+    padding: 0 2.2222222222rem;
+    margin: 11.1111111111rem auto 0;
+    width: 28.8888888889rem;
+    position: relative; }
+  #contactPage .container #contactForm {
+    padding: 0 2.2222222222rem;
+    margin: 2.2222222222rem auto 0;
+    text-align: center;
+    width: 28.8888888889rem; }
+    #contactPage .container #contactForm input {
+      width: 100%;
+      margin-top: 0.8333333333rem;
+      margin-right: 0; }
+    #contactPage .container #contactForm textarea {
+      height: 11.1111111111rem; }
+    #contactPage .container #contactForm button {
+      float: none;
+      margin-top: 1.1111111111rem; } }
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  #contactPage .container h1 {
+    width: 100%;
+    text-align: center;
+    margin-top: 5.5555555556rem;
+    margin-left: 0; }
+  #contactPage .container h2 {
+    width: 28.8888888889rem;
+    padding: 0 2.2222222222rem;
+    margin: 11.1111111111rem auto 0;
+    position: relative; }
+  #contactPage .container #contactForm {
+    width: auto;
+    padding: 0 2.2222222222rem;
+    margin: 2.2222222222rem auto 0;
+    text-align: center; }
+    #contactPage .container #contactForm input {
+      width: 100%;
+      margin-top: 0.8333333333rem;
+      margin-right: 0; }
+    #contactPage .container #contactForm textarea {
+      height: 11.1111111111rem; }
+    #contactPage .container #contactForm button {
+      float: none;
+      margin-top: 1.1111111111rem; }
+  #contactPage .overlay {
+    background-position: 18% 10%; } }
 @media screen and (max-width: 480px) {
   #contactPage .container h1 {
     width: 100%;
@@ -4510,21 +4567,22 @@ body {
   #contactPage .container h2 {
     width: auto;
     padding: 0 2.2222222222rem;
-    margin-left: 0;
-    margin-top: 11.1111111111rem; }
+    margin: 11.1111111111rem auto 0;
+    position: relative; }
   #contactPage .container #contactForm {
     padding: 0 2.2222222222rem;
-    margin-left: 0;
-    margin-top: 18.8888888889rem;
-    text-align: center; }
+    margin: 1.1111111111rem auto 0;
+    text-align: center;
+    width: auto; }
     #contactPage .container #contactForm input {
-      width: 100%; }
-    #contactPage .container #contactForm input[name=email] {
+      width: 100%;
       margin-top: 0.8333333333rem; }
     #contactPage .container #contactForm textarea {
       height: 11.1111111111rem; }
     #contactPage .container #contactForm button {
       float: none;
-      margin-top: 1.1111111111rem; } }
+      margin-top: 1.1111111111rem; }
+  #contactPage .overlay {
+    background-position: 18% 10%; } }
 
 /*# sourceMappingURL=contact.css.map */
