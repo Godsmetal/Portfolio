@@ -1,6 +1,8 @@
 @import "style.scss";
 
 #aboutPage {
+    min-height: pxToRem(820);
+    
     
     .overlay {
         background-image: url(../../assets/about-background.jpg);

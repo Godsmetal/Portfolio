@@ -2,6 +2,7 @@
 
 #contactPage {
     overflow-x: hidden;
+    min-height: pxToRem(750);
     
     .overlay {
         background-image: url(../../assets/contact-background.jpeg);
@@ -14,6 +15,7 @@
         position: absolute;
         top: 0;
         width: 100%;
+        min-height: pxToRem(750);
     }
     h1 {
         font-size: pxToEm(52);

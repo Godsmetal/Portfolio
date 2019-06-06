@@ -4420,46 +4420,48 @@ body {
     100% {
       bottom: -3.0555555556rem;
       visibility: hidden; } } }
-#aboutPage .overlay {
-  background-image: url(../../assets/about-background.jpg);
-  opacity: 0.25;
-  -moz-transform: scaleX(-1);
-  -o-transform: scaleX(-1);
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-  background-position: center 10%; }
-#aboutPage h1 {
-  position: absolute;
-  margin-top: 6.3888888889rem;
-  margin-left: 4.7222222222rem;
-  font-size: 2.8888888889em;
-  color: #DDA454; }
-#aboutPage h2 {
-  position: absolute;
-  font-weight: normal;
-  font-size: 1.1111111111em;
-  margin-top: 12.5rem;
-  margin-left: 4.7222222222rem;
-  width: 30rem;
-  line-height: 1.6666666667em; }
-  #aboutPage h2 span {
-    margin-bottom: 2.2222222222rem; }
-  #aboutPage h2 a {
-    color: #DDA454;
-    text-decoration: none;
-    display: inline-block;
-    transition: 2s ease-in;
-    position: relative; }
-  #aboutPage h2 a:after {
-    content: '';
+#aboutPage {
+  min-height: 45.5555555556rem; }
+  #aboutPage .overlay {
+    background-image: url(../../assets/about-background.jpg);
+    opacity: 0.25;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    background-position: center 10%; }
+  #aboutPage h1 {
     position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0%;
-    border-bottom: 2px solid #DDA454;
-    transition: 0.4s; }
-  #aboutPage h2 a:hover:after {
-    width: 100%; }
+    margin-top: 6.3888888889rem;
+    margin-left: 4.7222222222rem;
+    font-size: 2.8888888889em;
+    color: #DDA454; }
+  #aboutPage h2 {
+    position: absolute;
+    font-weight: normal;
+    font-size: 1.1111111111em;
+    margin-top: 12.5rem;
+    margin-left: 4.7222222222rem;
+    width: 30rem;
+    line-height: 1.6666666667em; }
+    #aboutPage h2 span {
+      margin-bottom: 2.2222222222rem; }
+    #aboutPage h2 a {
+      color: #DDA454;
+      text-decoration: none;
+      display: inline-block;
+      transition: 2s ease-in;
+      position: relative; }
+    #aboutPage h2 a:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0%;
+      border-bottom: 2px solid #DDA454;
+      transition: 0.4s; }
+    #aboutPage h2 a:hover:after {
+      width: 100%; }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   #aboutPage .overlay {

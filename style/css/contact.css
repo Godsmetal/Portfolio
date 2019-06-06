@@ -4421,7 +4421,8 @@ body {
       bottom: -3.0555555556rem;
       visibility: hidden; } } }
 #contactPage {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  min-height: 41.6666666667rem; }
   #contactPage .overlay {
     background-image: url(../../assets/contact-background.jpeg);
     background-position: center 10%;
@@ -4432,7 +4433,8 @@ body {
     opacity: 0.25;
     position: absolute;
     top: 0;
-    width: 100%; }
+    width: 100%;
+    min-height: 41.6666666667rem; }
   #contactPage h1 {
     font-size: 2.8888888889em;
     color: #DDA454;
