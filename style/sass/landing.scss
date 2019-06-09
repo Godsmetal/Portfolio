@@ -69,7 +69,7 @@
     #landingPage {
        .container {
             
-            h1 {
+           h1 {
                 font-size: pxToEm(45);
                 width: pxToRem(360);
             }
@@ -79,12 +79,14 @@
                font-size: pxToEm(23);
            }
             
-            button {
-                bottom: pxToRem(170);
-                margin: auto !important;
-                left: 0;
-                right: 0;
-            }
+           form {
+               button {
+                   margin: pxToRem(630) auto 0;
+                   width: pxToRem(225);
+                   left: 0;
+                   right: 0;
+               }
+           }
         } 
     }   
 }

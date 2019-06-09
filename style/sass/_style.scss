@@ -235,6 +235,30 @@ body {
 
 /* ------- Non-Retina Screens ------- */
 
+//Mobile up to 360px
+@media screen
+    and (max-width: 359px) {
+        body,html {
+            @include fontSize(13);
+        }
+}
+
+//Mobile up to 375px
+@media screen
+    and (min-width: 360px) and (max-width: 374px) {
+        body,html {
+            @include fontSize(14);
+        }
+}
+
+//Mobile up to 411px
+@media screen
+    and (min-width: 375px) and (max-width: 411px) {
+        body,html {
+            @include fontSize(15);
+        }
+}
+
 //Large displays 1920 wide
 @media screen
     and (min-width: 1920px)
@@ -343,3 +367,4 @@ body {
         100% {bottom: pxToRem(-55); visibility: hidden;}
     }
 }
+
