@@ -20,7 +20,6 @@ $(function() {
         //If no page in url, its on the index.
         if((current.length == 0) && ($this.attr('href') == 'index.php')) {
             $this.toggleClass('active');
-            
         }
     });
     
@@ -33,8 +32,13 @@ $(function() {
         $('.mobileNav').find('a').each(function() {
            //current link
             var $this = $(this);
-            if($this.attr('href').indexOf(current) !== -1) {
+            
+            if(($this.attr('href').indexOf(current) !== -1) && (current.length > 0)) {
                 //Add active tag to icon
+                $this.children(':first').addClass('active');
+            }
+            
+            if((current.length == 0) && ($this.attr('href') == 'index.php')) {
                 $this.children(':first').addClass('active');
             }
         });
