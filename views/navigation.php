@@ -1,4 +1,4 @@
-<base href='/Portfolio/' />
+<base href='/' />
 
 <!-- Navigation Bar -->
 <div class='nav'>

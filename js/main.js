@@ -12,9 +12,15 @@ $(function() {
         //current link
         var $this = $(this);
         
-        //if current path is like this link, make it active
-        if($this.attr('href').indexOf(current) !== -1) {
+        //if current path is like this link, make it active and has a pathname
+        if(($this.attr('href').indexOf(current) !== -1) && (current.length > 0)) {
             $this.toggleClass('active');
+        }
+    
+        //If no page in url, its on the index.
+        if((current.length == 0) && ($this.attr('href') == 'index.php')) {
+            $this.toggleClass('active');
+            
         }
     });
     
