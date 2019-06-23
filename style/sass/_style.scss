@@ -306,6 +306,7 @@ body {
         
         body,html {
             overflow-y: hidden;
+            overscroll-behavior-y: none; //helps prevent mobile devices scrolling past body
             display: flex;
             flex-direction: column;
             position: relative;

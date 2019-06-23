@@ -4380,6 +4380,7 @@ body {
 @media screen and (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1) {
   body, html {
     overflow-y: hidden;
+    overscroll-behavior-y: none;
     display: flex;
     flex-direction: column;
     position: relative; }

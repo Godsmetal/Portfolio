@@ -4380,6 +4380,7 @@ body {
 @media screen and (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1) {
   body, html {
     overflow-y: hidden;
+    overscroll-behavior-y: none;
     display: flex;
     flex-direction: column;
     position: relative; }
@@ -4582,6 +4583,9 @@ body {
     #projectsPage .owl-carousel .owl-dots button {
       margin: 0 0.5555555556rem; } }
 @media screen and (max-width: 480px) {
+  body, html {
+    min-height: 47.2222222222rem; }
+
   #projectsPage .owl-carousel .owl-stage-outer {
     top: 0;
     -webkit-transform: none;
@@ -4592,7 +4596,6 @@ body {
     #projectsPage .owl-carousel .item h1 {
       font-size: 2.2222222222em;
       text-align: center;
-      margin-top: 4.4444444444rem;
       margin-bottom: 2.7777777778rem;
       padding: 0; }
     #projectsPage .owl-carousel .item .image-container {
