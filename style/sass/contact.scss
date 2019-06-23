@@ -120,6 +120,8 @@
     
     #contactPage {
         .container {
+            display: unset;
+            flex-grow: unset;
                 
             h1 {
                 width: 100%;
@@ -156,6 +158,10 @@
                     margin-top: pxToRem(20);
                 }
             }
+            
+            .overlay {
+                height: 100%;
+            }
         }
     }
 }
@@ -164,6 +170,8 @@
     
     #contactPage {
         .container {
+            display: unset;
+            flex-grow: unset;
             
             h1 {
                 width: 100%;
@@ -204,14 +212,21 @@
         
         .overlay {
             background-position: 18% 10%;
+            height: 100%;
         }
     }
 }
 
 @include mobile {
     
+    body, html {
+        min-height: pxToRem(825);    
+    }
+    
     #contactPage {
         .container {
+            display: unset;
+            flex-grow: unset;
                 
             h1 {
                 width: 100%;
@@ -251,6 +266,7 @@
         
         .overlay {
             background-position: 18% 10%;
+            height: 100%;
         }
     }
 }
