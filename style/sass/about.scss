@@ -87,6 +87,9 @@
 @include mobile {
     
     #aboutPage {
+        
+        //min-height: unset;
+        
         .overlay {
             background-image: url(../../assets/about-background-mobile.jpg);
             transform: none;
@@ -95,15 +98,20 @@
         h1 {
             font-size: pxToEm(45);
             margin-left: pxToRem(45);
-            margin-top: pxToRem(140);
+            margin-top: pxToRem(70);
         }
         
         h2 {
             font-size: pxToEm(16);
             line-height: pxToEm(30);
-            width: pxToRem(400);
+            width: pxToRem(380);
             margin-left: pxToRem(45);
-            margin-top: pxToRem(250);
+            margin-top: pxToRem(175);
+            margin-bottom: 0;
+            
+            span {
+                margin-bottom: pxToRem(30);
+            }
         }
     }
 }

@@ -4316,7 +4316,7 @@ body {
     color: #DDA454;
     cursor: pointer; }
   body .active {
-    color: #DDA454; }
+    color: #DDA454 !important; }
   body .container {
     width: 100%; }
     body .container .overlay {
@@ -4379,12 +4379,16 @@ body {
     display: none; } }
 @media screen and (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1) {
   body, html {
-    overflow-y: hidden; }
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+    position: relative; }
     body .nav, html .nav {
-      position: absolute;
       height: 3.0555555556rem;
-      width: 100%;
-      text-align: right; }
+      min-width: 100%;
+      text-align: right;
+      position: fixed;
+      top: 0; }
       body .nav .fa-bars, html .nav .fa-bars {
         margin-right: 1.3888888889rem;
         position: relative;
@@ -4392,6 +4396,8 @@ body {
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
         transform: translateY(-50%); }
+      body .nav .fa-bars:hover, html .nav .fa-bars:hover {
+        color: #E6E6E6; }
       body .nav .upperNav, body .nav .lowerNav, html .nav .upperNav, html .nav .lowerNav {
         display: none; }
     body .mobileNav, html .mobileNav {
@@ -4417,7 +4423,15 @@ body {
         display: block;
         visibility: visible;
         bottom: 0;
-        animation: slideUp .3s; }
+        animation: slideUp .3s;
+        position: fixed; }
+    body .container, html .container {
+      flex-grow: 1;
+      display: flex;
+      padding-top: 3.0555555556rem; }
+      body .container .overlay, html .container .overlay {
+        height: unset;
+        flex-grow: 1; }
 
   @keyframes slideUp {
     0% {
@@ -4574,12 +4588,12 @@ body {
   #contactPage .container h1 {
     width: 100%;
     text-align: center;
-    margin-top: 5.5555555556rem;
+    margin-top: 2.7777777778rem;
     margin-left: 0; }
   #contactPage .container h2 {
     width: auto;
     padding: 0 2.2222222222rem;
-    margin: 11.1111111111rem auto 0;
+    margin: 6.9444444444rem auto 0;
     position: relative; }
   #contactPage .container #contactForm {
     padding: 0 2.2222222222rem;

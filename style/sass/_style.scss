@@ -170,7 +170,7 @@ body {
     
     //If navigation activated make it signal that
     .active {
-        color: $gold;   
+        color: $gold !important;   
     }
     
     //Main container
@@ -306,19 +306,27 @@ body {
         
         body,html {
             overflow-y: hidden;
+            display: flex;
+            flex-direction: column;
+            position: relative;
             
             //Container for top navigation
             .nav {
-                position: absolute;
                 height: pxToRem(55);
-                width: 100%;
+                min-width: 100%;
                 text-align: right;
+                position: fixed;
+                top: 0;
                 
                 .fa-bars {
                     margin-right: pxToRem(25);
                     @include vertical-align();
                 }
                 
+                .fa-bars:hover {
+                    color: $offwhite;
+                }
+                                
                 .upperNav, .lowerNav {
                     display: none;
                 }
@@ -351,11 +359,23 @@ body {
                     visibility: visible;
                     bottom: 0;
                     animation: slideUp .3s;
+                    position: fixed;
+                }  
+            }
+            
+            .container {
+                flex-grow: 1;
+                display: flex;
+                padding-top: pxToRem(55);
+                
+                .overlay {
+                    height: unset;
+                    flex-grow: 1;
                 }
             }
             
         }
-    
+            
     //Animations for navigation
     @keyframes slideUp {
         0% {bottom: pxToRem(-55);}

@@ -70,18 +70,19 @@
        .container {
             
            h1 {
-                font-size: pxToEm(45);
-                width: pxToRem(360);
+               margin-top: pxToRem(50);
+               font-size: pxToEm(45);
+               width: pxToRem(360);
             }
            
            h2 {
-               margin-top: pxToRem(550);
+               margin-top: pxToRem(400);
                font-size: pxToEm(23);
            }
             
            form {
                button {
-                   margin: pxToRem(630) auto 0;
+                   margin: pxToRem(475) auto 0;
                    width: pxToRem(225);
                    left: 0;
                    right: 0;

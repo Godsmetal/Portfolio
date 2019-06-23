@@ -1,6 +1,6 @@
 //On document load
 $(function() {
-
+    
     /* -------- Desktop navigation -------- */
     
     //activate the current page on the navigation panel
@@ -24,7 +24,8 @@ $(function() {
     });
     
     /* -------- Mobile navigation -------- */
-    $('#menu').click(function(){
+    
+    $('#menu').on('click', function(){
         $(this).toggleClass('active');
         $('.mobileNav').toggleClass('active');
         
