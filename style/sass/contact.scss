@@ -53,6 +53,15 @@
             text-overflow: ellipsis;
         }
         
+        //Hides safari adding an icon in for its contacts
+        input::-webkit-contacts-auto-fill-button {
+          visibility: hidden;
+          display: none !important;
+          pointer-events: none;
+          position: absolute;
+          right: 0;
+        }
+        
         input[placeholder], textarea {
             font-family: $defaultFont;
             font-size: pxToEm(20);
