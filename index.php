@@ -3,6 +3,10 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:title" content="Mason Santora Portfolio">
+        <meta property="og:description" content="Check out my personal website!">
+        <meta property="og:image" content="http://masonsantora.me/assets/thumbnail.jpg">
+        <meta property="og:url" content="http://masonsantora.me">
         <title>Mason Santora Portfolio</title>
         <link rel='stylesheet' type='text/css' href='style/css/landing.css'>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
