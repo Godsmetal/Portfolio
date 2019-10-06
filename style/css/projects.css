@@ -4497,8 +4497,7 @@ body {
             margin-left: -1em; }
           #projectsPage .owl-carousel .item .info-container .description li span {
             display: block; }
-        #projectsPage .owl-carousel .item .info-container p {
-          font-style: italic;
+        #projectsPage .owl-carousel .item .info-container p, #projectsPage .owl-carousel .item .info-container a {
           font-size: 0.8888888889em;
           text-align: center;
           margin-top: 2.2222222222rem;

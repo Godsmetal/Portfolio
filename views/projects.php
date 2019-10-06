@@ -80,6 +80,31 @@
                 <!-- Project Three -->
                 <div class='item'>
                     
+                    <h1>Portfolio</h1>
+                    
+                    <div class='image-container'>
+                        <img class='laptop' src='assets/laptop-portfolio.png'>
+                        <img class='phone' src='assets/phone-portfolio.png'>
+                    </div>
+                    
+                    <div class='info-container'>
+
+                        <ul class='description'>
+                            <li>Full scale front-end builds of desktop and mobile</li>
+                            <li> Desktop/Mobile user interface designs using Adobe Illustrator</li>
+                            <li>Integration of external jQuery plugins</li>
+                            <li>Advanced Sass framework using custom mixins, global usage partial, extensions</li>
+                            <li>Programmed using Sass, JavaScript, jQuery, PHP, HTML5/CSS3, GitHub</li>
+                        </ul>
+
+                        <a href='https://github.com/Godsmetal/Portfolio' target='_blank'>https://github.com/Godsmetal/Portfolio</a>
+                        
+                    </div>
+                </div>
+                
+                <!-- Project Four -->
+                <div class='item'>
+                    
                     <h1>Rochester Riverside <br> Convention Center</h1>
                     
                     <div class='image-container'>
@@ -98,12 +123,12 @@
                             <li>Programmed using PHP, Sass, JavaScript, phpMyAdmin and MySQLi</li>
                         </ul>
 
-                        <p>Confidential - Therefore code will not be distributed</p>
+                        <a href='https://github.com/Godsmetal/RRCC' target='_blank'>https://github.com/Godsmetal/RRCC</a>
                         
                     </div>
                 </div>
                 
-                <!-- Project Four -->
+                <!-- Project Five -->
                 <div class='item'>
                     
                     <h1>Collegiate Pentesting <br>Competition</h1>
